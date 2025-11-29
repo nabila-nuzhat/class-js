@@ -8,5 +8,6 @@ function square(n) {
 var square1 = square(n);
 var square2 = square(8);  
 
-console.log(square1)
-console.log(square2)
+console.log(square1);
+console.log(square2);
+console.log(square(10));//directly log result of function
