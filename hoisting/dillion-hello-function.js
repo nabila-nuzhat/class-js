@@ -28,12 +28,9 @@ function printHello2() {
 // ======= function internal with return ==========================
 }
 printHello3();
-// hello 3
+// hello 3 --------------1 
 
-// let outputDillion = printDillion3();
-// console.log(outputDillion());
-
-
+// printDillion3() is returned inside printHello3 and needed to store in a variable 
 function printHello3() {
   console.log('hello 3')
 
@@ -42,6 +39,12 @@ function printHello3() {
   }
 }
 
-// let outputDillion = printDillion3(); // ???????????????? issue ??????????????
-// console.log(outputDillion);
-// console.log(printDillion3());
+console.log(printHello3()); // hello3----- 2, [Function: printDillion3]
+
+let outputHelloDillion3 = printHello3();
+console.log(outputHelloDillion3); //hello3------ 3, [Function: printDillion3]
+outputHelloDillion3(); // dillion 3 (bcz output of of [Function: printDillion3] )
+
+// final output sequence:
+// hello 3, hello 3, [Function: printDillion3], hello 3, [Function: printDillion3], dillion 3
+
