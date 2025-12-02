@@ -3,7 +3,7 @@
 // // hello
 
 // printDillion()
-// // ReferenceError: printDillion is not defined
+// // ReferenceError: printDillion is hoisted in local scope but not defined
 
 // function printHello() {
 //   console.log('hello')
@@ -12,6 +12,19 @@
 //     console.log("dillion")
 //   }
 // }
+
+printHello();
+// hello
+//dillion
+
+function printHello() {
+  console.log('hello')
+
+  printDillion(); // hoisted in local scope
+  function printDillion() {
+    console.log("dillion")
+  }
+}
 
 // ======= function chaining ==============================
 printHello2()();
