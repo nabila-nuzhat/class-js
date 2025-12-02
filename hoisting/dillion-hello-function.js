@@ -24,9 +24,21 @@ function printHello2() {
   return function printDillion2() {
     console.log("dillion 2 Function Chaining")
   }
+}
+
+printHello22();
+// hello 2 Function Chaining
+// bcz printDillion22() is not called or returned
+
+function printHello22() {
+  console.log('hello2-2 Function Chaining')
+
+  function printDillion22() {
+    console.log("dillion2-2 Function Chaining")
+  }
+}
 
 // ======= function internal with return ==========================
-}
 printHello3();
 // hello 3 --------------1 
 
