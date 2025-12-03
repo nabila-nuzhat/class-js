@@ -1,3 +1,4 @@
+// varible shadowing 
 var messageVar = "Global message VAR";
 let messageLet = "Global message LET";
 
