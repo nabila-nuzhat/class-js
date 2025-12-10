@@ -14,7 +14,7 @@
 // let result = sum(50, 10, 20, 5, 8);
 // console.log(result);
 
-//----------------Other Parameter + REST OPERATOR 1 PARAMETER---------------------------
+//----------Other Parameter + REST OPERATOR 1 PARAMETER---------------------------
 // function sum(a, b, ...c){
 // return a - b;
 // }

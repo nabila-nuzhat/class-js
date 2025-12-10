@@ -1,4 +1,4 @@
-// Main examole ===================
+// Main example ===================
 let buttonProps = (borderRadius) => {
     const createVariantButtonProps = (variant, color) => {
         const newProps = {
@@ -10,7 +10,6 @@ let buttonProps = (borderRadius) => {
     }
     return createVariantButtonProps;
 }
-
 
 let primaryButton = buttonProps("1rem");
 console.log(primaryButton); // [Function: createVariantButtonProps]
