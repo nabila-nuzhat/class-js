@@ -18,11 +18,9 @@ person2.lastName = "Smith";
 person2.greet(); // ?? what does this mean?
 
 
-// // MY Testing: different output
+// // MY Testing: different output ------------------
 console.log(personPrototype); // { greet: [Function: greet] }
 console.log(person2); // person2 object
 
 const protoTypeVariable = personPrototype;
 console.log(protoTypeVariable);
-
-
