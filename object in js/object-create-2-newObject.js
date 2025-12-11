@@ -6,5 +6,3 @@ compactSuv.model = "Grand";
 compactSuv.color = "Robust Emerald Pearl";
 compactSuv["Engine Type"] = "1.5L Turbo Petrol (around 158-160 bhp"
 console.log(compactSuv);
-
-
