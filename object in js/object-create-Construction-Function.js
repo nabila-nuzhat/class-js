@@ -28,7 +28,9 @@ function SUV (type, brand, model, color, engine){
 }
 
 const compactSUV1 = new SUV("Compact SUV", "Honda", "Jazz", "grey", " 1.5L engine;  122hp");
+
 const familySUV1 = new SUV("Family-Oriented", "Ford", "Everest", "black", "2.0L Turbo Diesel and powerful 3.0L V6 Turbo Diesel engines.");
+
 const smallSUV1 = new SUV("Small SUV", "Mazda", "CX-3", "red", "Mazda's  SkyActiv-G 2.0L 4-cylinder; power: 148-154 hp)")
 
 console.log(compactSUV1);
