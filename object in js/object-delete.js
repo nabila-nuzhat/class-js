@@ -1,4 +1,4 @@
-// deleting any property from object
+// deleting any property and the value from object
 const objectDelete = {
     keyOne : "value 1",
     keyTwo : "value 2",
