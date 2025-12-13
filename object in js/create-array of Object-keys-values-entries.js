@@ -1,3 +1,10 @@
+/**
+ * Object.keys(objectName);
+ * Object.values(objectName);
+ * Object.entries(objectName);
+ * flat : arrayname.flat();
+ */
+
 const objectName = {
     key1 : "value 1",
     key2 : 2,
