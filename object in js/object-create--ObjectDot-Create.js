@@ -4,6 +4,12 @@
 /**
  * creates a new object using an existing object as the prototype of the new object, 
  * useful for implementing prototypal inheritance.
+ * 
+ * 
+ * Here greet()
+ * class method: greet(): In object-oriented programming with JavaScript classes, greet() is often used as a method of the class. 
+ * 
+ * object method: greet(): A function can also be defined as a method within an object, using the this keyword to access other properties of that object. 
  */
 
 const personPrototype = {
