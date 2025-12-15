@@ -1,2 +1,2 @@
-objectFreezeExm.key3 = "THREEEEE";
+delete objectFreezeExm.key3;
 console.log(objectFreezeExm);

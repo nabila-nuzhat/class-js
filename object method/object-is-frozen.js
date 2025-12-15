@@ -15,5 +15,5 @@ console.log(Object.isFrozen(objectFreezeExm));
 Object.freeze(objectFreezeExm); 
 console.log(objectFreezeExm);
 console.log(Object.isFrozen(objectFreezeExm));
-// objectFreezeExm.key3 = "THREEEEE";
+// delete objectFreezeExm.key3 // cannot be deletable
 // console.log(objectFreezeExm);
