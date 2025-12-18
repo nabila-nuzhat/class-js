@@ -50,3 +50,18 @@ console.log(arrowObjectFunction["power Call"]()); // undefined undefined; bcz ar
 
 console.log(arrowObjectFunction33.powerCall()); // BROWSER o/p --> Flash 100 yard Dash undefined
 // NODE.js terminal o/p --> undefined undefined; bcz In Node.js, top-level this is module.exports (an empty object), not global, so arrow functions inherit {} and properties are undefined.
+
+
+//=========================================
+//=========================================
+const arrowObjectFunction44 = {
+    name33 : "Hulk",
+    quality33: "Smash & Crash",
+    powerCall : function(){
+      return () => this.name33 + " " + this.quality33;
+    }
+ }
+
+ console.log(arrowObjectFunction44.powerCall()); //[Function (anonymous)]
+
+  console.log(arrowObjectFunction44.powerCall()()); //Hulk Smash & Crash; gets the value from parent function object. bcz inherits its this
