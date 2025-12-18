@@ -30,7 +30,7 @@ const personMy = {
     lastMyName : "Nuzhat",
     idMy       : 3560,
     hiMyName : function() {
-      return "My name is " + this.firstMyName + " "+ this.lastMyName;
+      return "My name is " + this.firstMyName +" "+ this.lastMyName;
     }
 };
 console.log(personMy.hiMyName()); // My name is Nabilaaa Nuzhat
@@ -44,3 +44,25 @@ const personYou = {
 }
 
 console.log(personMy.hiMyName.call(personYou)); // My name is Parvez islam
+
+// Sir example with EXTRA Arguement: through method ===============
+
+const person3 = {
+    firstNameCeleb: "Vidya",
+    lastNameCeleb : "Balan",
+    idCeleb       : 3560,
+    starCeleb : function(age) { // age parameter for extra arguement
+      return "I am " + this.firstNameCeleb +" "+ this.lastNameCeleb + ", age: "+ age;
+    }
+};
+console.log(person3.starCeleb(33)); // My name is Nabilaaa Nuzhat
+
+
+const person4 = {
+    // firstYourName: "Parvez",
+    // lastYourName: "islam" // variable name = owner of object method object's varibale name
+    firstNameCeleb: "Atif",
+    lastNameCeleb: "Aaslam - The singer"
+}
+
+console.log(person3.starCeleb.call(person4, 35));
