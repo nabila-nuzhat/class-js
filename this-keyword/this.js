@@ -2,9 +2,11 @@
 // ===========================================
 console.log("this alone",this);// Node.js -> this alone {},
 // browser --> window object
-
+//=========================================
+//=========================================
 function saySomething() {
   console.log(this)
+  console.log('this in a function', this);
 }
 
 saySomething()
@@ -34,6 +36,9 @@ const person2 = {
     }
 };
 
-console.log('this in object method\n', person2.getThis()); // this in object method
+console.log('this in object method\n', person2.getThis()); 
+
+// o/p of : return this + "\n" + this.firstName + " " + this.lastName;
+// this in object method
  //[object Object]
-//John Doe
+ //John Doe
