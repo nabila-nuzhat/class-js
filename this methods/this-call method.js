@@ -45,7 +45,7 @@ const personYou = {
 
 console.log(personMy.hiMyName.call(personYou)); // My name is Parvez islam
 
-// Sir example with EXTRA Arguement: through method ===============
+//similar to Sir example with EXTRA Arguement: through method ===============
 
 const person3 = {
     firstNameCeleb: "Vidya",
@@ -66,3 +66,20 @@ const person4 = {
 }
 
 console.log(person3.starCeleb.call(person4, 35));
+
+
+// Call method another Multiple argument example =====================
+const person1111 = {
+    name: 'Pedro',
+    surname: 'Sanchez',
+    sayName: function(city, country) {
+        return this.name + " " + this.surname + ", " + city + ", " + country;
+    }
+}
+
+const person22222 = {
+    name: 'Jimena',
+    surname: 'Juarez'
+}
+
+console.log(person1.sayName.call(person2, "DF", "Mexico"));
