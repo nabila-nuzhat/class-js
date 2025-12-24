@@ -83,3 +83,32 @@ const person22222 = {
 }
 
 console.log(person1.sayName.call(person2, "DF", "Mexico"));
+
+// Google search call-method exapmle ====================
+const person = {
+  name: 'Alice'
+};
+
+console.log(this); //  {} 
+console.log(this.name); // undefined 
+
+function sayHello(greeting, punctuation) {
+  console.log(`${greeting}, my name is ${this.name}${punctuation}`);
+  console.log(this);
+    console.log(this.name); 
+}
+
+console.log(this); // {} 
+console.log(this.name); // undefined 
+
+
+// The 'this' in sayHello will be 'person'
+sayHello.call(person, 'Hello', '!'); // Hello, my name is Alice!
+// { name: 'Alice' }
+//  Alice
+
+
+sayHello.call('Hello', '!'); // !, my name is undefinedundefined 
+// [String: 'Hello'] 
+// undefined
+sayHello('HALOO', '!!!!!!');
