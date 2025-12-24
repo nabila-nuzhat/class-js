@@ -1,4 +1,4 @@
-// this-apply method another Multiple argument example =====================
+// this-apply method another Multiple argument example: works as this-call method but passes arguements in Array =====================
 const person1111 = {
     name: 'Pedro',
     surname: 'Sanchez',
