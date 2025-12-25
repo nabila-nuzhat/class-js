@@ -20,12 +20,45 @@ celeb2.age = 39;
 console.log(copyCeleb2);
 console.log(celeb2 === copyCeleb2);
 
-// shallow copy: array inside object // only copies main(1st level) object/array but does not copy in multilevel ===========================
+// shallow copy: array inside object // only copies main(1st level) object/array but does not copy in multilevel of the nested objects/array inside the parent object/array =======================================
 let celeb3 = {name: "sabbir Mir", age: 40, cars:["bmw", "ferrari", "tesla"]};
 let copyCeleb3 = {...celeb3}; // spread operator. stored as different reference.
 console.log(copyCeleb3);
 
 celeb3.age = 66;
-celeb3.cars[3] = "mercedes benz";
-console.log(copyCeleb3);
+celeb3.cars[2] = "mercedes benz";
+
+console.log("celeb3", celeb3);
+console.log("copyCeleb3", copyCeleb3);
 console.log(celeb3 === copyCeleb3);
+
+// Copy Nested Objext/array that is inside the parent Object/array : using JSON.stringfy(object-name)  =============================================
+
+let celeb4 = {name: "Shabnoor Shahnaz", age: 33, cars:["Lancer", "ferrari", "tesla"]};
+let copyCeleb4 = JSON.stringify(celeb4); // JSON.stringfy(object-name)  for copying nested objects/array
+
+console.log(copyCeleb4);
+
+celeb4.age = 70;
+celeb4.cars[2] = "Noah";
+
+console.log("celeb4", celeb4);
+console.log("copyCeleb4", copyCeleb4);
+console.log(celeb4 === copyCeleb4);
+
+
+// Deep copy: for converting the Stringfied object into  Object again using "JSON.parse(target object-name)" ==============================================
+let celeb5 = {name: "Joya Ahsan", age: 33, cars:["Lancer", "ferrari", "tesla"]};
+let copyCeleb5 = JSON.stringify(celeb5);
+ // JSON.stringfy(object-name)  for copying nested objects/array
+console.log(copyCeleb5);
+
+let objectCopyCeleb5 = JSON.parse(copyCeleb5);
+
+celeb5.age = 68;
+celeb5.cars[2] = "Rolse Royalce";
+
+console.log("celeb5", celeb5);
+console.log("copyCeleb5", copyCeleb5);
+console.log("copyCeleb5", objectCopyCeleb5);
+console.log(celeb5 === copyCeleb5);
