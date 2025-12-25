@@ -1,0 +1,31 @@
+// object, array are copied as reference in heap memory. copied version ref === main version ref. 
+// value inside copied version also changes with the changes in the main
+
+// non - proper way=======================
+let celeb = {name: "shahrukh", age: 34};
+let copyCeleb = celeb;
+console.log(copyCeleb);
+celeb.age = 56;
+console.log(copyCeleb);
+console.log(celeb === copyCeleb);
+
+
+// proper way to copy array & object: using Spread Operator {...variabe-name of} [...variabe-name of]
+// "shallow copy/ 1st level copy "=======================================
+let celeb2 = {name: "Salman Shah", age: 40};
+let copyCeleb2 = {...celeb2}; // spread operator. stored as different reference.
+console.log(copyCeleb2);
+
+celeb2.age = 39;
+console.log(copyCeleb2);
+console.log(celeb2 === copyCeleb2);
+
+// shallow copy: array inside object // only copies main(1st level) object/array but does not copy in multilevel ===========================
+let celeb3 = {name: "sabbir Mir", age: 40, cars:["bmw", "ferrari", "tesla"]};
+let copyCeleb3 = {...celeb3}; // spread operator. stored as different reference.
+console.log(copyCeleb3);
+
+celeb3.age = 66;
+celeb3.cars[3] = "mercedes benz";
+console.log(copyCeleb3);
+console.log(celeb3 === copyCeleb3);
