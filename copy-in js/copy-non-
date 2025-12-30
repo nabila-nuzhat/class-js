@@ -32,6 +32,7 @@ console.log("celeb3", celeb3);
 console.log("copyCeleb3", copyCeleb3);
 console.log(celeb3 === copyCeleb3);
 
+
 // Copy Nested Objext/array that is inside the parent Object/array : using JSON.stringfy(object-name)  =============================================
 
 let celeb4 = {name: "Shabnoor Shahnaz", age: 33, cars:["Lancer", "ferrari", "tesla"]};
@@ -53,7 +54,7 @@ let copyCeleb5 = JSON.stringify(celeb5);
  // JSON.stringfy(object-name)  for copying nested objects/array
 console.log(copyCeleb5);
 
-let objectCopyCeleb5 = JSON.parse(copyCeleb5);
+let objectCopyCeleb5 = JSON.parse(copyCeleb5); // convert the stringfied object to main object
 
 celeb5.age = 68;
 celeb5.cars[2] = "Rolse Royalce";
