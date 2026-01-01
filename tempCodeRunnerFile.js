@@ -1,0 +1,1 @@
+ // console.log(`Hi, I am ${firstName} ${lastName}. Today I am ${age} years old.`);
