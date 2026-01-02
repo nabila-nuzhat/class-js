@@ -7,7 +7,7 @@ function speech({ firstName, lastName, age }){
 
 speech(person); // arguement is the object that is destructured
 
-// -----------just for comparison object as parameter 
+// just for comparison object as parameter ======================
 function objectAsParameter(objectPerson){
     console.log(`I am THE ${objectPerson.firstName}.`);
 }
