@@ -8,7 +8,6 @@ console.log(firstName); // same as person.firstName
 console.log(lastName); // same as person.lastName
 console.log(personAge); // 23 = age key-name's value after using the "binding identifier (alias)" "personAge" = 23
 console.log(person.age); // person.age = personAge = 23
-
 console.log(age); //  global object = 55
 
 
