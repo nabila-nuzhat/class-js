@@ -3,7 +3,7 @@
 
 document.querySelector("h4").innerHTML = "My Name is Samantha";
 const h4Elm = document.querySelector("h4");
-h4Elm.innerHTML = "My Name is Nilima"
+h4Elm.innerHTML = "My Name is Nilima";
 
 // -------------------- CSS add ----------------------------
 // CSS JS > CSS inline --------------------
