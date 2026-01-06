@@ -28,5 +28,9 @@ divClassPn.forEach((divSingle) => console.log(divSingle)
 console.log(divClassPn[1]); // access as index, not array but can be accessed as array using index
 
 
+// nested parts : Ways------------------------------------------
+console.log(document.querySelector("#sec h2")); //   <h2>Helooo DOmmm!!</h2>
+console.log(document.querySelector("#blogPage")); // <a href="#" id="blogPage">Blog</a>
 
-
+const aNews = document.querySelectorAll(".pn")[2].querySelectorAll("a")[2];
+console.log(aNews); //  <a href="#">Business News</a>
