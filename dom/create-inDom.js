@@ -10,4 +10,3 @@ const createP2 = document.createElement("p");
 const secElm2 = document.querySelector("#secAp");
 const secAppPara = document.secElm.append(createP);
 secAppPara.innerHTML = "The Rivers flows through Bangladesh like bloods in vein";
-
