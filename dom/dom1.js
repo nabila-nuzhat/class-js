@@ -23,6 +23,12 @@ const divClassPn = document.querySelectorAll(".pn");
 console.log(divClassPn); // Nodelist = looks like "array", but NOT array but can be used "forEach()" "array-method" to loop. can be accessed as array using index
 
 // forEach in Nodelist -------------------------------------------------
+// syntax: array.forEach(value => {
+  // console.log(value);
+    // });
+    // array.forEach((element) => {
+        // code to run for each element
+    //});
 divClassPn.forEach((divSingle) => console.log(divSingle) 
 ) // all divs
 console.log(divClassPn[1]); // access as index, not array but can be accessed as array using index
