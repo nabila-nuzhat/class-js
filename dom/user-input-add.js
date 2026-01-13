@@ -45,11 +45,11 @@ function addDrink (){ // is same as: btnElmUser.onclick = function (){  }
         drinksUser.forEach((drinkUser)=> {
         const liElmUser = document.createElement("li");
         liElmUser.innerText = drinkUser;
-        liElmUser.style.textTransform = "capitalize";
+        liElmUser.style.textTransform = "capitalize"; // capitalizes each list item after input
         ulElmUser.append(liElmUser);
         inputElmUser.value = ""; // everytime the drink name is added, it clears the input box
         })
     }
-    else{alert("Add Your Drink!")}
+    else{alert("Add Your Drink!");}
     
 }
