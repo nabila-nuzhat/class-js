@@ -10,7 +10,7 @@ document.body.append(ulElm);
 
 
 // list of something = array ------
-let drinksList = ["Coffee", "Coca Cola", "Ribena", "Lemon Mint"];
+let drinksList = ["Coffee", "Tea", "Coca Cola", "Ribena", "Lemon Mint", "Borhani", "Strawberry Yogurt"];
 
 // pick up each drink put it to the list: make list with forEach() ------------
 
