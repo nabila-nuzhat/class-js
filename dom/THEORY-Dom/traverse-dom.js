@@ -11,15 +11,17 @@
 // element.nextElementSibling.children[0] = element.nextElementSibling.children[index] -> selecting any one child of the nextsibling by index
 // Next element sibling: element.nextElementSibling.children[0].nextElementSibling = element.nextElementSibling.children[index].nextElementSibling
 // Previous element sibling: element.nextElementSibling.children[0].previousElementSibling = element.nextElementSibling.children[index].previousElementSibling
+
 // See Class of elemennt -> element.classList // op-p = DOMTokenList/ element.className // o-p = name of class
 // add more id : element.id += "new id"
 // Change id: element.id --- usually not used.
 // add Class Name : element.className // replaces old class
-// Multiple Class ADD : element.classList.add("class name")
-// remove Class :  element.classList.remove("class name")
-// replace selected class : element.classList.replace("old class name","new class name")
-// toggle class :  element.classList.toggle("class name") 
-// // toggle example =  // // <button id="btn">Toggle</button>
+// element.classList:
+    // Multiple Class ADD : element.classList.add("class name")
+    // remove Class :  element.classList.remove("class name")
+    // replace selected class : element.classList.replace("old class name","new class name")
+    // toggle class :  element.classList.toggle("class name") 
+    // // toggle example =  // // <button id="btn">Toggle</button>
                         // // <div id="box"></div>
                         // // const btn = document.getElementById("btn");
                         // // const box = document.getElementById("box");
@@ -27,8 +29,11 @@
                         // // btn.addEventListener("click", () => {
                         // // box.classList.toggle("highlight");
                         // // });
-// contains a class or not :  element.classList.contains("class name")
+// toggle My-example:
 
+
+// Contains a class or not :  element.classList.contains("class name")
+//
 
 //-------------------------------- Chatgpt Rest ----------
 // // Why traversing is important

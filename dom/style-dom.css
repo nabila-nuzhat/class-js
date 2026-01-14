@@ -1,0 +1,13 @@
+.hola{
+    color: crimson;
+    background-color: rgb(104, 228, 237);
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.toggleBtnStyle{
+    background-color: rgb(180, 4, 180);
+    color: gold;
+    padding: 10px;
+    font-size: 20px;
+}
