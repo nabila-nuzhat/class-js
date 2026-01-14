@@ -1,6 +1,36 @@
 // Traversing in JavaScript ==========================================
 // * means moving through or navigating between elements or items—most commonly through the DOM (Document Object Model), but it can also apply to arrays or objects.
 
+// parent element ->element.parentElement = only Elements
+// parent Node ->element.parentNode 
+// children -> element.children = only Elements
+// children Nodes -> element.childrenNodes = all Elements + all nodes (space(text dhore), text, starting & ending tag...etc)
+// next Element Sibling -> element.nextElementSibling = next Element
+// next Sibling -> element.nextSibling = next node (eg. space) is Sibling
+// element.nextElementSibling.children -> Children (all the childs) of next Element Sibling
+// element.nextElementSibling.children[0] = element.nextElementSibling.children[index] -> selecting any one child of the nextsibling by index
+// Next element sibling: element.nextElementSibling.children[0].nextElementSibling = element.nextElementSibling.children[index].nextElementSibling
+// Previous element sibling: element.nextElementSibling.children[0].previousElementSibling = element.nextElementSibling.children[index].previousElementSibling
+// See Class of elemennt -> element.classList // op-p = DOMTokenList/ element.className // o-p = name of class
+// add more id : element.id += "new id"
+// Change id: element.id --- usually not used.
+// add Class Name : element.className // replaces old class
+// Multiple Class ADD : element.classList.add("class name")
+// remove Class :  element.classList.remove("class name")
+// replace selected class : element.classList.replace("old class name","new class name")
+// toggle class :  element.classList.toggle("class name") 
+// // toggle example =  // // <button id="btn">Toggle</button>
+                        // // <div id="box"></div>
+                        // // const btn = document.getElementById("btn");
+                        // // const box = document.getElementById("box");
+
+                        // // btn.addEventListener("click", () => {
+                        // // box.classList.toggle("highlight");
+                        // // });
+// contains a class or not :  element.classList.contains("class name")
+
+
+//-------------------------------- Chatgpt Rest ----------
 // // Why traversing is important
 // * Manipulating DOM elements
 // * Reading or changing data
