@@ -15,8 +15,15 @@
                         // // btn.addEventListener("click", () => {
                         // // box.classList.toggle("highlight");
                         // // });
-// toggle My-example: toggle-btn.js file
+    // toggle My-example = 
+                        // // const greetingInSpainDivElm = document.querySelector("#greetingInSpain");
+                       // // const toggleBtnElm = document.querySelector(".toggleBtn");
 
+                      // // function holaOnClick(){
+                      // // greetingInSpainDivElm.classList.toggle("hola");
+                      // // toggleBtnElm.classList.toggle("toggleBtnStyle"); // correct way
+                      // // }
 
+                    
 // Contains a class or not :  element.classList.contains("class name")
 //
