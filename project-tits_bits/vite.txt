@@ -1,0 +1,82 @@
+==== what is vite? ===
+
+- multiple files as modules will be created
+- vite manages all those files
+
+==== vite + tailwind install  ===
+- "Installing Tailwind CSS as a Vite plugin"
+
+- needs node js
+- ./ = project name => keeps the "existing" project folder while installing
+- directly use docs of tailwind css
+==== folder name ===
+- no space, no camel case
+- vite does not take camel case 
+
+==== server ===
+- local host
+- no live server
+
+==== package.json ===
+- version can be changed
+- type: "module"
+    - for import/export 2 types:
+    - common js => uses  module
+    - modernjs, => is used in all modern project
+    - if deleted the project wont work, if only there is a bk up in git
+
+==== package-lock.json ===
+- also shoudnt  delete
+- vite depends on many packages, it includes those
+
+==== dev : "vite" ===
+- vite will maintain things for developers
+like watch, npm etc
+
+==== build: vite build ===
+
+==== dist ===
+- distribute folder
+- npm run build creates "dist folder"
+- "dist folder": includes all codes in minify version
+- only "dist" goes to server (minify version) to run the whole project
+- do not go to git
+
+    - initially not needed in the simple project
+
+==== public folder ===
+- url/filename = can be accessed if that is inside "public" folder
+
+==== .bin folder ===
+- operating system file
+
+==== src folder ===
+- operating system file
+
+==== counter.js ===
+- not needed for now in "splite-wise" js project
+
+==== main.js ===
+- not needed for now in "splite-wise" project
+
+==== tailwind install ===
+==== vite.config.js ===
+    - if not installed while installing tailwind
+    needs to be added in "root" folder of a project
+    - needs to be configured
+    - copy paste code
+    - imports ...
+    - export => tailwind plugin through function defineCongig
+
+==== import tailwind css in style.css ===
+    - delete all old code of style.css
+    - paste "import tailwind odd"
+    - no output ca=ss rrquired
+
+==== npm run dev ===
+- runs the server
+- hot reload
+
+==== hot reload ===
+- instant reload
+- speed depends on pc configuration

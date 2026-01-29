@@ -1,0 +1,22 @@
+- event-propagation
+- bubbling
+- stop propagation 
+- prevenDefault
+- array method- instance method vs static method
+- difference: "let array-variable" VS only "array-variable
+- const numSlice7 = nums.slice(1, 6); // [ 1, 2, 3, 4, 5 ] ?????? is it common to use???
+    console.log("nums.slice(1,6) =", numSlice7); 
+    let nums = [0, 1, 2, 3, 4, 5];
+- does sort() sorts numbers?
+- methods that "modifies" the "original Array" ???
+- fill() details
+- vite
+- dev vite
+- import export types common js , moder js
+- build: vite build
+- dev dependecies vs dependency
+- package-lock.json 
+- dist
+- bin
+-  npm run dev ?
+- hot reload ?
