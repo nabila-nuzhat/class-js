@@ -1,23 +1,32 @@
 ==== Tailwind css layers ===
 ==== theme, base, components & utilities apply ===
 ==== how to write :
-- @layer components {}
-- @layer utilities {}
-- @layer base {}
-- @layer theme {}
+- @layer theme {} : ...design system
+- @layer base {} : ...reset + defaults
+- @layer components {} : ....reusable UI blocks
+- @layer utilities {} : ...small, single-purpose classes
 
 
-for base---- 
+
+
+for base---- no class needed..,directly applies to an element-tag
     @layer-name {
        element-name{
             @apply property/mutiple properties(tailwind class/tailwind class[customized value])
         }
     }
 
-for components & utilities----
+for components ----
     @layer-name {
-        .class-name{
-            @apply property/mutiple properties(tailwind class/tailwind class[customized value])
+        .class-name-of-component{
+            @apply multiple properties(tailwind class/tailwind class[customized value])
+        }
+    }
+
+for utilities ----
+    @layer-name {
+        .class-name-single-property{
+            @apply property(tailwind class/tailwind class[customized value])
         }
     }
 
@@ -36,7 +45,6 @@ for theme ----
       }
     }
 
-THEORY(chatgpt)
 
 ==== container class with Tailwind ===
 - @layer 
