@@ -20,3 +20,4 @@
 - bin
 -  npm run dev ?
 - hot reload ?
+- tailwind utilities & others apply to id ???

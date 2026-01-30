@@ -1,0 +1,43 @@
+==== Tailwind css layers ===
+==== theme, base, components & utilities apply ===
+==== how to write :
+- @layer components {}
+- @layer utilities {}
+- @layer base {}
+- @layer theme {}
+
+
+for base---- 
+    @layer-name {
+       element-name{
+            @apply property/mutiple properties(tailwind class/tailwind class[customized value])
+        }
+    }
+
+for components & utilities----
+    @layer-name {
+        .class-name{
+            @apply property/mutiple properties(tailwind class/tailwind class[customized value])
+        }
+    }
+
+for theme ----
+ @layer-name {
+        element{
+            common-property-name (like, color, spacing etc)
+            {
+                primary: "single-value"
+                secondary: "single-value"
+            } ,
+
+            common-property-name (like, color, spacing etc){
+                numeric(like 18): "single-value"
+            }
+      }
+    }
+
+THEORY(chatgpt)
+
+==== container class with Tailwind ===
+- @layer 
+
