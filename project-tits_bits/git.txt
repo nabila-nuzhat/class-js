@@ -1,0 +1,2 @@
+==== git local (if multiple users in one pc) ====
+- git config user.email "email add"

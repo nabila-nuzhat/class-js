@@ -21,3 +21,5 @@
 -  npm run dev ?
 - hot reload ?
 - tailwind utilities & others apply to id ???
+- is transition utility in tailwind?
+- utilities have multiple css properties?

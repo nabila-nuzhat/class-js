@@ -6,6 +6,7 @@
 - @layer components {} : ....reusable UI blocks
 - @layer utilities {} : ...small, single-purpose classes
 
+utilities = evey tailwind class   
 
 
 
@@ -49,3 +50,15 @@ for theme ----
 ==== container class with Tailwind ===
 - @layer 
 
+==== transition ===
+==== icon ===
+    - lucide.com
+    - install via npm
+    if npm creates problem
+
+    - use unpkg instead 
+    - cdn
+    - thn only i tag can be used
+
+==== gradiant ===
+==== gradiant ===
