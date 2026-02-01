@@ -23,3 +23,10 @@
 - tailwind utilities & others apply to id ???
 - is transition utility in tailwind?
 - utilities have multiple css properties?
+- const nums2 = [11, 45, 33, 99, 100, 91]
+    const numSortCallBkFn = nums2.sort((a,b)=> a-b);
+    console.log("numSortCallBkFn", numSortCallBkFn);
+
+    here ((a,b)=> a-b); does what??
+
+- array methid docs

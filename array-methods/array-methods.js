@@ -240,6 +240,7 @@ console.log(Array(4).fill(0));
 // .some() =>  opposdite concept 
     // returns false if it finds 1 element in the array that does not satisfy the provided testing function. Otherwise, it returns true.
     // has to be all true for true
+    // returns "boolean" as o/p
 
 const isBelowThreshold = (currentValue) => currentValue < 40;
 
@@ -248,8 +249,101 @@ const array1 = [1, 30, 39, 29, 10, 13];
 console.log(array1.every(isBelowThreshold));
 // Expected output: true
 
+// ----------------------
+// loop
+// .for Each() ====
+// .map() ====
+    // .for Each(call back Fn, thisArg)
+    // call back fn can accept up to 3 arguements
+       // .for Each((index, value, array)=>{ })
+    // cannot "return" anything
+        // alternate to "return" anything = .map()
+    // map() = .for Each() but "map()" can return anything inside "array" but "forEach()" cannnot
+array1.forEach((value, index,array)=>{
+    console.log(value, index, array);
+    console.log(value * 10);
+})
+    // map() = .for Each()
+
+const returnForEach = array1.forEach((value, index, array)=>{
+    return value * 1000;
+})
+
+console.log("returnForEach", returnForEach); // returnForEach undefined
+
+const returnMap = array1.map((value, index, array)=>{
+    return value * 1000;
+})
+
+console.log("returnMAp", returnMap); // returnMAp [ 1000, 30000, 39000, 29000, 10000, 13000 ]
+
+// ------------------
+// .find()
+    // returns "only 1st single value" that matches the "condition"
+    // .filter() = .find() but filters & returns all matched value
+const find = array1.find((value, index, array)=>{
+    return value > 29;
+})
+
+console.log("array1:", array1); // array1: [ 1, 30, 39, 29, 10, 13 ]
+console.log("find:", find); // find: 30
+
+// ----------------
+// .findLast()
+    // returns "only Last single value" that matches the "condition"
+const findLast = array1.findLast((value, index, array)=>{
+    return value > 29;
+})
+
+console.log("array1:", array1); // array1: [ 1, 30, 39, 29, 10, 13 ]
+console.log("find last:", findLast); // find: 39
+
+// -------------
+// .filter()
+    // filter() = .find() but filters & returns all matched value
+const filter = array1.filter((value, index, array)=>{
+    return value >= 29;
+})
+
+console.log("array1:", array1); // array1: [ 1, 30, 39, 29, 10, 13 ]
+console.log("filter:", filter);
 
 
+// -----------------------------------------------
+// .findIndex()
+    // returns "only 1st index" of value that matches the "condition"
+const findIndex = array1.findIndex((value, index, array)=>{
+    return value > 29; 
+})
+
+console.log("array1:", array1); // array1: [ 1, 30, 39, 29, 10, 13 ]
+console.log("find Index:", findIndex); // find Index: 1
+
+// ------------------------------------------
+// .findLastIndex()
+    // returns "only Last index" of value that matches the "condition"
+const findLastIndex = array1.findLastIndex((value, index, array)=>{
+    return value > 29;
+})
+
+console.log("array1:", array1); // array1: [ 1, 30, 39, 29, 10, 13 ]
+console.log("find last Index:", findLastIndex); // find last Index: 2
 
 
+// ------------------
+// .indexOf()
+    // returns "-1" if the value is not presnt in array 
 
+const indexOf = array1.indexOf(10);
+console.log("array1:", array1); // array1: [ 1, 30, 39, 29, 10, 13 ]
+console.log("Index Of:", indexOf); // Index Of 4
+
+
+// ------------------
+// .includes()
+    // returns boolean answer
+
+const includes = array1.includes(10);
+const includes2 = array1.includes(40);
+console.log("array1:", array1); // array1: [ 1, 30, 39, 29, 10, 13 ]
+console.log("includes:", includes, ",", includes2); //
