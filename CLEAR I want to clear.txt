@@ -45,3 +45,4 @@ console.log("reduce", reduce); // 262,24
     why need to know?
     effect?
 - event handler
+- synchronus vs asynchronous
