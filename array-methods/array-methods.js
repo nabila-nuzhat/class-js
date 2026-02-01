@@ -346,4 +346,98 @@ console.log("Index Of:", indexOf); // Index Of 4
 const includes = array1.includes(10);
 const includes2 = array1.includes(40);
 console.log("array1:", array1); // array1: [ 1, 30, 39, 29, 10, 13 ]
-console.log("includes:", includes, ",", includes2); //
+console.log("includes:", includes,",",includes2); //
+
+
+// ------------------
+// .flat() / .flat(depth)
+
+    // turns nested arrays in one single array
+    // does not modify main array
+    // .flat(depth of array) : depth = the level of nested arrays to which the nested arrays will break into 1 array 
+        // .flat() = .flat(1)
+        // eg. .flat(1) /  .flat(2) /  .flat(infinity)
+        // .flat(infinity) : if want to breakdown to the last of nested array or do not know the last definite depth
+
+
+const nestedArrayFlat = [1, 6, 7, 9, 3, [2, 24, [300, 98, [111, 222, 55]]]]
+
+console.log("main array:", nestedArrayFlat);
+
+const nestedFlat = nestedArrayFlat.flat(); 
+console.log("nestedFlat :", nestedFlat); // 1st level of array
+
+const nestedFlat1 = nestedArrayFlat.flat(1); 
+console.log("nestedFlat1 :", nestedFlat1); // 1st level of array
+
+const nestedFlat2 = nestedArrayFlat.flat(2); 
+console.log("nestedFlat2 :", nestedFlat2); // 2nd level of array
+
+console.log("main array:", nestedArrayFlat);
+
+const nestedFlatInfinity = nestedArrayFlat.flat(Infinity); 
+console.log("nestedFlatInfinity :", nestedFlatInfinity); // last level of array
+
+
+// -------------
+// .flatMap()
+    // The flatMap() method of Array instances returns a new array formed by applying a given callback function to each element of the array, 
+    // and then flattening the result by one level. 
+    // identical to a map() followed by a flat() of depth 1 (arr.map(...args).flat()), but slightly more efficient than calling those two methods separately.
+    // Parameters
+    // callbackFn
+    // A function to execute for each element in the array. It should return an array containing new elements of the new array, or a single non-array value to be added to the new array. The function is called with the following arguments:
+
+    // element
+    // The current element being processed in the array.
+
+    // index
+    // The index of the current element being processed in the array.
+
+    // array
+    // The array flatMap() was called upon.
+
+    // thisArg Optional
+    // A value to use as this when executing callbackFn. See iterative methods.
+
+const arrFlatMap = [1, 2, 1];
+
+const result = arr.flatMap((num) => (num === 2 ? [2, 2] : 1));
+
+console.log(result);
+console.log(arrFlatMap);
+
+// Expected output: Array [1, 2, 2, 1]
+
+
+
+// -----------
+// .reduce()
+    // returns "single" value
+    // syntax type-1: array.reduce((previous-Value, current-value, index, array)=> {})
+
+    // syntax type-2: array.reduce((previous-Value, current-value, index, array)=> {previous-Value + current-value, initial-value})
+        // initial-value = a fixed value that adds up "as previous-Value"
+        // method chaining possible
+        // = also called accumulator
+
+
+const nestedArrayReduce = [1, 6, 7, 9, [2, 24]];
+
+const reduce = nestedArrayReduce.reduce((prevValue, cuurentValue, index, array)=> prevValue + cuurentValue)
+
+console.log("reduce", reduce); // 262,24
+
+    // method chaining with .flat()
+const reduce2 = nestedArrayReduce.flat().reduce((prevValue, cuurentValue, index, array)=> prevValue + cuurentValue)
+
+    // with initial value
+console.log("reduce2 :", reduce2); // 49
+const reduceInitialValueAdd = nestedArrayReduce.flat().reduce((prevValue, cuurentValue, index, array)=> prevValue + cuurentValue, 100)
+
+console.log("reduceInitialValueAdd :", reduceInitialValueAdd); // 149
+
+
+// ----
+// reduceRight()
+    // starts from right to left

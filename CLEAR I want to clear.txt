@@ -30,3 +30,12 @@
     here ((a,b)=> a-b); does what??
 
 - array methid docs
+
+- const nestedArrayReduce = [1, 6, 7, 9, 3, [2, 24]];
+
+const reduce = nestedArrayReduce.reduce((prevValue, cuurentValue, index, array)=> prevValue + cuurentValue)
+
+console.log("reduce", reduce); // 262,24 
+??? how = 262,24
+
+- list of method chaining
