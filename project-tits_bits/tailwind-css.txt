@@ -54,11 +54,15 @@ for theme ----
 ==== icon ===
     - lucide.com
     - install via npm
-    if npm creates problem
 
+    if npm creates problem for lucide
     - use unpkg instead 
     - cdn
     - thn only i tag can be used
 
 ==== gradiant ===
-==== gradiant ===
+==== tailwind suggestion if not work ===
+- alt+space
+- / ts server in vs code
+
+==== flex grow ==
