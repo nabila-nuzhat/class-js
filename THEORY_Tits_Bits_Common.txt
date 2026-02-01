@@ -1,0 +1,4 @@
+- opacity
+    - 2 types
+    - parent element bg(div) => child element gets also
+    - only child element => only color opacity
