@@ -1,0 +1,2 @@
+1. Accordion
+(using event delegation, bubbling concept)
