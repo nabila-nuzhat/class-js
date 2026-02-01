@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Practice</title>
+  </head>
+  <body>
+    <ul>
+      <li>Orange</li>
+      <li>Banana</li>
+      <li>Potato</li>
+      <li>Apple</li>
+    </ul>
+
+    <script>
+      const li = document.querySelectorAll("li");
+
+      li.forEach(function (list) {
+        list.addEventListener("click", function () {
+          alert("Yes, I click");
+        });
+      });
+    </script>
+  </body>
+</html>

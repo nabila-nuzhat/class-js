@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./capture.css" />
+    <title>Nested Solution</title>
+  </head>
+  <body>
+    <h1>Bubbling and Capturing phase</h1>
+
+    <ul>
+      <li>
+        <h2>Orange</h2>
+        <p>Kamal</p>
+      </li>
+      <li>
+        <h2>Apple</h2>
+        <p>Lawal</p>
+      </li>
+      <li>
+        <h2>Banana</h2>
+        <p>Olaide</p>
+      </li>
+    </ul>
+
+    <script>
+      const ul = document.querySelector("ul");
+
+
+      ul.addEventListener("click", function () {
+        console.log(event.target);
+        console.log(event.currentTarget);
+        console.log(event.target.closest("li"));
+        event.target.closest("li").classList.toggle("highlight");
+      });
+    </script>
+  </body>
+</html>

@@ -121,7 +121,7 @@ const numSplice4 = nums.splice(0, 1, 100, 55);
 console.log("nums.splice(0, 1, 100, 55) =", numSplice4); // [ 2 ]
 console.log("nums =", nums); // nums = [ 100, 55, 5 ]
 
-// array.join() = converts array => string
+// array.join() = converts array => string ============================
     // () includes the blank space/ comma/ any symbol that comes in between the values of the array
     // array.join(" ") 
     // array.join(" , ") 
@@ -137,7 +137,7 @@ const numsJoin4 = nums.join(" ; ");
 console.log(numsJoin4);
 
 
-// toString() = converts array => string
+// toString() = converts array => string ==========================
     // but Symbols of punctuation can NOT be changed
 
 const numsString = nums.toString();
@@ -168,7 +168,7 @@ console.log("names", names);
 const nameSort = names.sort();
 console.log("nameSort", nameSort);
 
-// reverse() = sorts albhabetically / ascending / descending order
+// reverse() = sorts albhabetically / ascending / descending order ====================
 
 const numReverse = nums.reverse();
 console.log("numReverse", numReverse);
@@ -178,7 +178,7 @@ console.log("names original array modified : after sort() applied: ", names);
 const nameReverse = names.reverse();
 console.log("nameReverse", nameReverse);
 
-// method-chaining:
+// method-chaining: ========================
     // . chaining 
     // applying multiple methods by "." notation
 
@@ -199,7 +199,7 @@ console.log(localeString);
     // This assumes "en" locale and UTC timezone - your results may vary
 
 
-// with()
+// with() ====================================
     // changes value by "index"
     // does not modify "original-array"
     // array.with(index, new value)
@@ -208,10 +208,10 @@ const arr = [1, 2, 3, 4, 5];
 console.log(arr.with(2, 6)); // [1, 2, 6, 4, 5]
 console.log(arr); // [1, 2, 3, 4, 5]
 
-// .keys()
+// .keys() =============================
  // converts to "object"
 
-// fill()
+// fill() ================================
     // The fill() method of Array instances changes all elements within a range of indices in an array to a static value. It returns the modified array.
     // array.fill(new value, start point, length)
 
@@ -232,12 +232,12 @@ console.log(Array(4).fill(0));
 // Expected output: Array [ 0, 0, 0, 0 ]
 
 
-// .isArray()
+// .isArray() ==================================
     // if array or not
 
 
-// .every()
-// .some() =>  opposdite concept 
+// .every() =============================
+// .some() =>  opposite concept 
     // returns false if it finds 1 element in the array that does not satisfy the provided testing function. Otherwise, it returns true.
     // has to be all true for true
     // returns "boolean" as o/p

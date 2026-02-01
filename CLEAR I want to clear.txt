@@ -39,3 +39,9 @@ console.log("reduce", reduce); // 262,24
 ??? how = 262,24
 
 - list of method chaining
+- event capture
+    is it default? 
+    why true in parent in example 2
+    why need to know?
+    effect?
+- event handler
