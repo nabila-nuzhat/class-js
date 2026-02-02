@@ -52,3 +52,9 @@
 
    - creates "document fragments"
    - reused by cloning 
+   - content painting: to avoid, template is used in DOM
+        - when update occurs in js, js startsover from 1st, rather than,
+        - updatimg/patching the selected part.
+        - to avoid it template is used
+        - reload time lessens
+        - dom loads initial 1 time, Loop runs multiple times

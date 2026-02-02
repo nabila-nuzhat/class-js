@@ -37,6 +37,9 @@ const ulElm = document.querySelector("ul"); // makes all child "li" HTML Collcet
         // const clone = templateElm.content.cloneNode(true)
         // clone.querySelector("element name").textContent = "target text content"
         // document.body.appendChild(clone)
+    // usecase of template:
+        // 
+
     const templateElm = document.querySelector("#myTemplate");
     console.log(templateElm.content); // #document-fragment
 
