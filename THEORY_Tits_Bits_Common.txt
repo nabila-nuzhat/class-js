@@ -60,4 +60,18 @@
         - dom loads initial 1 time, Loop runs multiple times
 
 - dom range
--  window.getSelection();
+    -  window.getSelection();
+    - selecting dom element within a selected range
+
+- js mutation observer
+    - in infinity scroll
+        - observes to how much product or info is loaded
+        - like news feed
+        - without clicking load more
+        - 2 types:
+        1. mutation observer: if any change in a DOM element; observes changes in DOM element. eg: how much vdo time watched
+        2. iteration observer: if anything is iterarting: eg. scroll
+        - developer built "transtack" which is package that handles these
+- FFmpeg: video stream - support: high config tasks
+    - streams in chunks, 
+    - AI observes
