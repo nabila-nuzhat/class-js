@@ -58,3 +58,6 @@
         - to avoid it template is used
         - reload time lessens
         - dom loads initial 1 time, Loop runs multiple times
+
+- dom range
+-  window.getSelection();

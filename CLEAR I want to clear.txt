@@ -53,3 +53,6 @@ console.log("reduce", reduce); // 262,24
     when update occurs in js, js startsover from 1st, rather than,
     updatimg/patching the selected part.
     to avoid it template is used ???
+
+- range ?
+    - window.getSelection() ??

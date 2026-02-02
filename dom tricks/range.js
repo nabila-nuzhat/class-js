@@ -1,0 +1,17 @@
+const paragraphs = document.querySelectorAll("p");
+
+// Create new range
+const range = new Range();
+
+// Start range at second paragraph
+range.setStartBefore(paragraphs[1]);
+
+// End range at third paragraph
+range.setEndAfter(paragraphs[2]);
+
+// Get window selection
+const selection = window.getSelection();
+
+// ???????????????? issue isn't working ??????????????????????????????
+// Add range to window selection
+selection.addRange(range);
