@@ -20,9 +20,11 @@ const ulElm = document.querySelector("ul"); // makes all child "li" HTML Collcet
     // ulElm.children.textContent = "Adios Amigos."; // X X NOT POSSIBLE X X
     console.log(ulElm.children); // HTML Collection // element.children = "traversing concept"
     const liElms = Array.from(ulElm.children); // converts HTML Collection into "array"// can apply loop
+    console.log(liElms);
+    
 
-    liElms.forEach((liElm, index)=>{
-        liElm.textContent = `Hola! Amigo ${index}`;
+    liElms.forEach((value, index)=>{
+        value.textContent = `Hola! Amigo ${index}`;
     })
 
 
