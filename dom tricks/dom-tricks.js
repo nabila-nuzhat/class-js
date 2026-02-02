@@ -28,7 +28,22 @@ const ulElm = document.querySelector("ul"); // makes all child "li" HTML Collcet
     })
 
 
+// template : cloning =====================
+    // create clone of template:
+    // cloneNode() = clones with blank spaces as well
+    // clone() = 
+    // cloneNode(true) = true will access it to "nested" or else it will limited to parent element
+    // create, use & add clone to "document":
+        // const clone = templateElm.content.cloneNode(true)
+        // clone.querySelector("element name").textContent = "target text content"
+        // document.body.appendChild(clone)
+    const templateElm = document.querySelector("#myTemplate");
+    console.log(templateElm.content); // #document-fragment
 
-
-
+    // creating, using and adding the clone to display 
+    const clone = templateElm.content.cloneNode(true);
+    // const clone = templateElm.content.clone(true);
+    clone.querySelector("h2").textContent = "Dynamic Title to display" // usin
+    clone.querySelector("p").textContent = "Dynamic description to display";
+    document.body.appendChild(clone); // append child() explanation in  text file
 

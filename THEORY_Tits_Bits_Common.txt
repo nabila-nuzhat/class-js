@@ -46,4 +46,9 @@
    - JavaScript DOM templating, primarily using the <template> HTML element, serves to create reusable, inert HTML fragments that can be cloned and inserted into the live Document Object Model (DOM) dynamically at runtime using JavaScript. 
    - browser initially, acting as a blueprint until activated by script.
    - written in HTML (yet not visible without comment, without using css)
-   = 
+   = <template></template
+   - Q: html tag written in html but will not be visible
+    A: kept inside template tag
+
+   - creates "document fragments"
+   - reused by cloning 
