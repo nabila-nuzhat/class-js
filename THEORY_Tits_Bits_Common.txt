@@ -1,4 +1,4 @@
-- opacity
+- opacity ==============
     - 2 types
     - parent element bg(div) => child element gets also
     - only child element => only color opacity
@@ -9,3 +9,34 @@
 - // EXPLAIN LATER with DRAG and DROP, File Reader
     - events bubbling, delegetion CLASS mengtioned
 ***
+
+- prototype-chaining ========
+- syntatic sugar ====
+- auto semicolon in VS code: ===
+    alt + shift + f
+
+- Array.from() ===
+- eg. Array.from(element.children)
+    is a safe, clean way to turn “array-like” or iterable things into a real Array 
+    — so you can use array methods like map, filter, reduce, etc.
+
+    - The problem it solves:
+        Some JS things look like arrays but aren’t arrays:
+
+        1. NodeList → from querySelectorAll
+        2. HTMLCollection → from .children
+        3. arguments
+        4. Strings
+        5. Sets / Maps
+    - Array.from() is a static method of the "Array constructor", 
+      NOT a method on array instances.
+    - If you call it on Array, it’s static.
+      If you call it on [], it’s an instance method.
+      Mental model 🧠
+
+    - Think of it like this:
+        - Static method → used to create arrays
+        Array.from(), Array.isArray(), Array.of()
+
+        - Instance method → used to operate on arrays
+        map(), push(), forEach()
