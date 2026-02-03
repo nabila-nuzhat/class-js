@@ -88,12 +88,14 @@
     - Only works if the variable is not const
 
 - Multiple Promises ? before promise all 
+
 - Promise
     - cannot be canceled
     - fetch can be aborted/cancelled
     - if no new promise is wanted to create & direct reolve/reject:
         Promise.resolve()
         Promise.reject()
+    - promise in "loop" not recommended, as the serial of ids not maintained
 
 - Promise.all()
 // promise ref source: https://dev.to/shameel/javascript-promise-all-vs-allsettled-and-race-vs-any-3foj

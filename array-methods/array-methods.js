@@ -253,7 +253,7 @@ console.log(array1.every(isBelowThreshold));
 // loop
 // .for Each() ====
 // .map() ====
-    // .for Each(call back Fn, thisArg)
+    // .forEach(call back Fn, thisArg)
     // call back fn can accept up to 3 arguements
        // .for Each((index, value, array)=>{ })
     // cannot "return" anything
