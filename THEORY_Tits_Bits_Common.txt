@@ -75,3 +75,16 @@
 - FFmpeg: video stream - support: high config tasks
     - streams in chunks, 
     - AI observes
+
+- variable reassign vs declaration
+    - Variable declaration
+        Creating a variable for the first time
+    - Variable reassignment
+        Changing the value of an already declared variable.
+        let x = 5;
+        x = 20;      // reassignment
+        No let / const / var
+
+    - Only works if the variable is not const
+
+- Multiple Promises ? before promise all 

@@ -6,7 +6,7 @@
 // Caution with "finally": The finally block can override return values or a thrown error. This behaviour may be confusing and can lead to bugs as well.
 
 
-// syntax =============================
+// syntax ============================ 
 // try {
 //   // Code might throw an error
 // } catch (error) {

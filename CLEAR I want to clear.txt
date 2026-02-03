@@ -55,4 +55,6 @@ console.log("reduce", reduce); // 262,24
     to avoid it template is used ???
 
 - range ?
-    - window.getSelection() ??
+    - window.getSelection() ??- 
+
+- Multiple Promises ? before promise all 
