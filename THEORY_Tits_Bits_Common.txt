@@ -134,7 +134,22 @@
 
 
 - fetch
-    - json data called to JS by keyword "fetch
+    - a system to call URL  to get data
+    - fetch = request 
+       - request server to give something,
+       - js has a "request-object" through which request is done to server for giving something.
+       - server then sends a "promise" 
+       - until it is received fully the promise is "pending"
+       - if "promise" fails then it is rejected
+       - if comes promise is "resolved"
+       - fetch = keyword = function = by which "data" is taken from "URL"
+- data collect from "URL":
+    - by API calling "data" is collected from URL
+    - when website is visited = URL is hit = data reaches from server to frontend based on that URL = these are basically API
+        - eg. https://dummyjson.com/posts
+            - "posts" = params = which part of the URL is needed
+
+   - json data called to JS by keyword "fetch"
     - behind the secene uses "curl" to get data
     - curl https://json.....link :
         - shows/brings data
@@ -148,7 +163,24 @@
 
         - response = mainly a "http response", for getting data 
             from it need to convert to JSON
+        -
 
+
+- pagination :
+    - backend system
+    - skips and shows data to a certain limit
+    - loads the next min limit if loaded
+    - could be with page numbers
+    - could be inifinity scrolls
+        - eg. json of posts:
+            {
+                "posts": [],
+                "total": 251,
+                "skip": 0,
+                "limit": 30
+            }
+    
+ 
 
 - json
     - data format

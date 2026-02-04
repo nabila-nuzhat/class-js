@@ -60,3 +60,7 @@ console.log("reduce", reduce); // 262,24
 - Multiple Promises ? before promise all
 - resolve vs settled?? 
 - "then" keyword
+- virtualization
+- pagination
+- fetch
+- curl
