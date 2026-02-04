@@ -163,7 +163,10 @@
 
         - response = mainly a "http response", for getting data 
             from it need to convert to JSON
-        -
+        -   redirected: false, means the url didnt redirected to another url
+
+- why for api calling async function is requred?
+        - Asynchronous (async) functions are required for API calls to prevent the application or its user interface (UI) from freezing or becoming unresponsive while waiting for a response, which can take time due to network latency, server load, or other external factors. This non-blocking behavior is essential for a good user experience and application performance. 
 
 
 - pagination :
