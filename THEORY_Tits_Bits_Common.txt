@@ -220,3 +220,86 @@
     The async/await syntax enables you to handle promises without using .then() and .catch() method chaining, which also removes the need for nested callbacks.
 
 
+- OOP :
+https://www.freecodecamp.org/news/object-oriented-javascript-for-beginners/
+
+    - "Objects" that are created from a "class" are called "instances".
+    - core concept of OOP: is to "separate" "concerns into entities" "which are coded as objects".
+    - Each entity will group a given set of information (properties) and actions (methods) that can be performed by the entity
+    - OOP makes heavy usage of "classes" (which are a way of creating new objects starting out from a blueprint or boilerplate that the programmer sets).
+    - programmatic way of creating objects and setting different properties and methods given a set of conditions. And that's what classes are good for.
+
+    - "Classes" set a blueprint to create objects with predefined properties and methods. By creating a class, you can later on instantiate (create) objects from that "class", that will inherit all the properties and methods that "class" has.
+
+- 4 key principles of OOP :
+    - OOP is normally explained with "4 key principles" that dictate how OOP programs work/.
+        inheritance
+        encapsulation
+        abstraction and 
+        polymorphism
+
+        - Inheritance 
+            is the ability to create classes based on other classes. With inheritance, we can define a parent class (with certain properties and methods), and then children classes that will inherit from the parent class all the properties and methods that it has.
+
+            - repeating code is not optimal. A better way would be to declare a "parent-class" which is then extended by all other classes, like this:
+eg.
+class ClassParentName {
+                constructor(ab) {
+                this.ab = ab
+    }
+
+    method of parent-class = () => console.log(`I'm attacking with a power of ${this.power}!`)
+}
+
+
+class ChildClass extends ClassParentName {
+    constructor (c, d, ab) {
+        super(ab)
+        this.prop1 = name
+        this.prop2 = id
+        this.prop3 = "pq"
+    }
+
+    method1 = () => console.log("Zzzzzziiiiiinnnnnggggg!!")
+    method2 = () => console.log(this.d)
+}
+
+        - use the "constructor method" to "receive parameters" and assign them as properties, and methods are declared like simple functions
+
+        - On the children class, we use the "extends" keyword to declare the parent class we want to inherit from.
+
+        - Then on the constructor method, we have to declare the "parent-class's" parameter and use the "super function" to indicate that property is declared on the parent class.
+
+
+
+
+
+
+
+
+class: 
+    - "Classes" set a blueprint to create objects with predefined properties and methods. By creating a class, you can later on instantiate (create) objects from that "class", that will inherit all the properties and methods that "class" has.
+
+    - a class in a program is a definition of a “type” of custom data structure that includes both data and behaviors that operate on that data. Classes define how such a data structure works,
+    - classes are not themselves concrete values. To get a concrete value that you can use in the program, a class must be "instantiated" (with the "new" keyword) one or more times."
+
+    - The class keyword creates a constant, so it cannot be redefined afterwards.
+
+    - Classes are the blueprints or molds that we're going to use to create the actual objects.
+
+    - Classes must always have a "constructor" method that will later on be used to instantiate that class.
+
+    -  A "constructor" in JavaScript is just a plain old function that "returns an object". The only thing special about it is that, when invoked with the "new" keyword, it assigns its prototype as the prototype of the returned object.
+
+    - "this" keyword points to the "class" itself and is "used to define" the class properties within the constructor method.
+
+    - "Methods" can be added by simply defining the function name and its execution code.
+
+    - JavaScript is a prototype-based language, and within JavaScript classes are used only as syntactic sugar. This doesn't make a huge difference here, but it's good to know and keep in mind.
+
+- constructor
+     - A "constructor" in JavaScript is just a plain old function that "returns an object". 
+
+    - The only thing special about it is that, when invoked with the "new" keyword, it assigns its prototype as the prototype of the returned object.
+
+    - use the "constructor method" to "receive parameters" and assign them as properties, and methods are declared like simple functions

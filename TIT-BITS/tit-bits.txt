@@ -1,0 +1,13 @@
+
+- programming-paradigms
+    https://www.freecodecamp.org/news/an-introduction-to-programming-paradigms/
+
+- OOP
+https://www.freecodecamp.org/news/object-oriented-javascript-for-beginners/
+
+    - "Objects" that are created from a "class" are called "instances".
+    - core concept of OOP: is to "separate" "concerns into entities" "which are coded as objects".
+    - Each entity will group a given set of information (properties) and actions (methods) that can be performed by the entity
+    - OOP makes heavy usage of "classes" (which are a way of creating new objects starting out from a blueprint or boilerplate that the programmer sets).
+
+    - 
