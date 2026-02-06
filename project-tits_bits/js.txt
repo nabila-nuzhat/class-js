@@ -1,0 +1,24 @@
+- Model, feature, services of a project:
+- MVC(Model View Controller) pattern
+    - divide Models of a project 1st
+    - "models" controls "data"
+    - create "model":
+        - based on which "category of data" will be collected/received
+        - model-name always singular
+        - eg. user name's data, expense's data in splitter project
+        - eg. when a model is called a new user will be created
+
+    - "features" ~ services : 
+    - "controllers": 
+        - used in backend
+        - controls request, response
+
+    - services ~ features:
+        - can be used as controller, but controllers only controls equest, response
+        - service calls ....
+
+    - View: UI of the project
+
+- no Arrow fn can be used in CLASS
+- crypto.randomUUID
+    crypto is js own property

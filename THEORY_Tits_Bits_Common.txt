@@ -218,3 +218,5 @@
 
 - Why Use the async/await Syntax?
     The async/await syntax enables you to handle promises without using .then() and .catch() method chaining, which also removes the need for nested callbacks.
+
+
