@@ -1,2 +1,304 @@
 1. Accordion
 (using event delegation, bubbling concept)
+
+
+------- Chatgpt Suggestions ----------
+🟢 Super-Beginner (first real JS projects)
+1. Button Click Playground
+
+Features
+
+Button changes text
+
+Button changes color
+
+Disable / enable button
+
+You’ll learn
+
+addEventListener
+
+classList
+
+DOM properties
+
+2. Show / Hide Password
+
+Features
+
+Toggle password visibility
+
+Change icon/text
+
+You’ll learn
+
+Input type manipulation
+
+Conditional logic
+
+3. Character Counter
+
+Features
+
+Show remaining characters
+
+Change color near limit
+
+You’ll learn
+
+input event
+
+String length
+
+Dynamic UI feedback
+
+4. Light / Dark Mode Toggle
+
+Features
+
+Toggle theme
+
+Remember choice
+
+You’ll learn
+
+CSS classes
+
+localStorage
+
+5. Live Clock
+
+Features
+
+Digital clock updating every second
+
+You’ll learn
+
+Date
+
+setInterval
+
+🟢 Beginner (DOM + logic)
+6. Number Guessing Game
+
+Features
+
+Random number
+
+Hints (higher / lower)
+
+Reset game
+
+You’ll learn
+
+Math basics
+
+Game state
+
+7. Word Counter
+
+Features
+
+Count words, characters, sentences
+
+You’ll learn
+
+String methods
+
+Regex basics
+
+8. FAQ Accordion
+
+Features
+
+Expand / collapse answers
+
+Only one open at a time
+
+You’ll learn
+
+Event bubbling
+
+DOM traversal
+
+9. Tabs Component
+
+Features
+
+Switch between tabs
+
+Active tab styling
+
+You’ll learn
+
+Data attributes
+
+Reusable UI logic
+
+10. Modal / Popup
+
+Features
+
+Open / close modal
+
+Close on overlay click / ESC
+
+You’ll learn
+
+Keyboard events
+
+Accessibility basics
+
+🟢 Slightly More Thinking (still beginner)
+11. Calculator (Basic)
+
+Features
+
+Add, subtract, multiply, divide
+
+You’ll learn
+
+Click handling
+
+Expression building
+
+Edge cases
+
+12. Image Preview on Upload
+
+Features
+
+Show image before upload
+
+You’ll learn
+
+File input
+
+URL.createObjectURL
+
+13. Progress Bar
+
+Features
+
+Fill progress based on input or timer
+
+You’ll learn
+
+Inline styles
+
+Percent calculations
+
+14. Dropdown Menu
+
+Features
+
+Open/close dropdown
+
+Close when clicking outside
+
+You’ll learn
+
+Event propagation
+
+contains()
+
+15. Keyboard Event Visualizer
+
+Features
+
+Show key pressed & keyCode
+
+You’ll learn
+
+Keyboard events
+
+Event object
+
+🟢 Beginner Projects That Feel “Real”
+16. Shopping List
+
+Features
+
+Add / remove items
+
+Mark as bought
+
+You’ll learn
+
+CRUD operations in UI
+
+State syncing
+
+17. Simple Poll / Voting App
+
+Features
+
+Vote once
+
+Show results
+
+You’ll learn
+
+State updates
+
+Percentage calculations
+
+18. BMI Calculator
+
+Features
+
+Input height & weight
+
+Show BMI category
+
+You’ll learn
+
+Form handling
+
+Conditional rendering
+
+19. Random Quote Generator
+
+Features
+
+Random quote from array
+
+You’ll learn
+
+Arrays
+
+Randomization
+
+20. Password Strength Meter
+
+Features
+
+Weak / medium / strong
+
+You’ll learn
+
+Regex
+
+Visual feedback
+
+🧠 Tiny Challenges (perfect daily practice)
+
+Disable button until checkbox is checked
+
+Count how many times a button is clicked
+
+Auto-focus next input field
+
+Copy text to clipboard
+
+Detect caps lock on password field
+
+How to practice smart (important 👇)
+
+For each project, force yourself to:
+
+Write HTML first
+
+Style it with CSS
+
+Then write JS without looking at tutorials

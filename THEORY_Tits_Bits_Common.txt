@@ -222,6 +222,7 @@
 
 - OOP :
 https://www.freecodecamp.org/news/object-oriented-javascript-for-beginners/
+https://www.freecodecamp.org/news/an-introduction-to-programming-paradigms/
 
     - "Objects" that are created from a "class" are called "instances".
     - core concept of OOP: is to "separate" "concerns into entities" "which are coded as objects".
@@ -238,8 +239,21 @@ https://www.freecodecamp.org/news/object-oriented-javascript-for-beginners/
         abstraction and 
         polymorphism
 
-        - Inheritance 
-            is the ability to create classes based on other classes. With inheritance, we can define a parent class (with certain properties and methods), and then children classes that will inherit from the parent class all the properties and methods that it has.
+        - Inheritance : inheriting methods, properties from/of a class
+            - is the ability to create classes based on other classes. With inheritance, we can define a parent class (with certain properties and methods), and then children classes that will inherit from the parent class all the properties and methods that it has.
+
+            - eg. ATM: old common function: withdraw tk, new ATMs also added new features like CRM keeping the old withdraw finction.
+                AC : heater, room temp show, auto etc
+
+            - like new versions of apps inheriting core features.
+            - inheritence is difficult in "functions"
+                ❌ Functions do not directly support inheritance
+                ✅ Functions can implement inheritance using prototypes
+                like,  Animal.prototype.speak = function () {
+                            console.log("Animal speaks");
+                                    };
+                        Object.create(Animal.prototype);
+                ✅ Classes just make prototype inheritance easier and safer
 
             - repeating code is not optimal. A better way would be to declare a "parent-class" which is then extended by all other classes, like this:
 eg.
@@ -277,7 +291,7 @@ class ChildClass extends ClassParentName {
             - Children classes can override the parent's properties and methods, by declaring it again,
 
 
-        - Encapsulation
+        - Encapsulation : protecting properties
             -  it stands for an object's capacity to "decide" which information it exposes to "the outside" and which it doesn't. 
             
             - Encapsulation is implemented through "public and private properties" and methods.
@@ -289,21 +303,58 @@ class ChildClass extends ClassParentName {
 
             - Encapsulation is useful in cases where we need certain properties or methods for the inner working of the object, but we don't want to expose that to the exterior. Having private properties/methods ensures we don't "accidentally" expose information we don't want.
 
+            - eg. hidden password
 
 
-        - Abstraction
-            - Abstraction is a principle that says that a class should only represent information that is relevant to the problem's context. In plain English, only expose to the outside the properties and methods that you're going to use. If it's not needed, don't expose it.
+    - Abstraction : hiding complexity of a property, revealing the simple functional part only
+            - Abstraction in JavaScript hides complex implementation details, 
+            - exposing only essential features to manage code complexity.
+            - allows developers to focus on what an object does rather than how it does it, commonly achieved through functions, closures, classes with private fields, and array methods.
+            - reduce cognitive load. 
+            - Abstraction is a principle that says that a class should only represent information that is relevant to the problem's context. In plain English, 
+            - only expose to the outside the properties and methods that you're going to use. 
+            - If it's not needed, don't expose it.
 
             - This principle is closely related to encapsulation, as we can use public and private properties/methods to decide what gets exposed and what doesn't.
 
-        
-        - Polymorphism
+            - show/reveal only that part, which is actually needed to use the functionality 
+            - complexity hidden
+            - eg. remote control's power on, volume change, etc
+                ATM : card push, pass key -> cash out. the behind the scene is not visible outside
+                coffee machine
+            - eg. firebase: only provides backend service, but user do not have to code create anything
 
+            - Common Examples of Abstraction in JavaScript:
+                - Function Abstraction: Creating a function like calculateTotal(price, tax) that encapsulates calculation logic, allowing the user to call it with inputs without knowing the mathematical formula.
+                - Array Methods (map, filter, reduce): Using array.map() to transform data hides the underlying for loop, initialization, and array modification, providing a cleaner, declarative, and more abstract way to handle arrays.
+
+                - Object Methods (OOP): A Car object with a .drive() method that starts the engine, locks doors, and checks fuel, while the user only sees a simple car.drive() command, hiding internal complexity.
+
+                - Class Private Fields (#): Using private class fields (e.g., #calculateSalary) hides sensitive logic from external access, ensuring that only necessary public methods (e.g., getDetails()) are exposed.
+
+                - Modules/API Interaction: Importing a function from a library (e.g., fetchData()) provides functionality without exposing the underlying API calls, headers, or error handling.
+                - Event Listeners: Using element.addEventListener('click', handler) abstracts away the low-level browser mechanics of tracking mouse clicks and event propagation.
+                - Component-Based Frameworks (e.g., React/Vue): Utilizing components <Button /> abstracts complex HTML, CSS, and behavior, allowing developers to use complex UI elements as simple building blocks.
+                - Closures for Private Data: Using nested functions to keep variables private and hidden from the global scope, exposing only a public function to interact with them. 
+
+            - Common Use Cases
+                - API Development: Creating APIs where developers interact with a set of well-defined functions (endpoints) without needing to know the server-side logic or database interactions.
+                - Built-in JavaScript Methods: Functions like Array.prototype.push() or Array.prototype.map() are perfect examples. You use them by name, but you don't know (or need to know) the complex internal algorithms that make them work.
+                UI Components: When using a third-party library's UI component (e.g., a date picker), you use its provided properties (props) and methods, abstracting away the underlying HTML, CSS, and complex event handling.
+                - Database Operations: Object-Relational Mapping (ORM) frameworks abstract raw SQL queries, allowing developers to interact with data using high-level JavaScript objects and methods.
+                - Frameworks and Libraries: Modern web frameworks like React or Angular abstract much of the direct DOM manipulation, letting developers focus on the application's state and logic. 
+        
+        - Polymorphism: same method behiving differently in different cases
             - Polymorphism means "many forms".
             - It's the ability of "one method" to "return different values" according to certain conditions.
 
             - passing each class a different parameter at instantiation. That's one kind of polymorphism, "parameter-based"
+
             -  "inheritance-based" polymorphism, and that refers to when we have a parent class that sets a method and the child "overrides" that method to modify it in some way
+
+            - ex: Polymorohism example added inside "oop-inheritance-ex3.js" example file
+
+            - eg. Employee class: same function: "work" -> but same work function changes with designations of the Employees
 
 
     - Object Composition
@@ -313,7 +364,25 @@ class ChildClass extends ClassParentName {
         -  objects get properties and methods assigned only as they need them
         - by using "functions" that receive the "object as a parameter"
         - assign the object from parameter the desired property/method
+        - eg. car: motor, seat, battery, mirror, glass objects can be used individually too.
+        - eg 2: ecommerce services: product, inventory, user login, order. not all features are used by all users. so all services are not in same place, rather built sepaerately and then connected.
+        - compositing individual different objects to making another new thing. 
+        - lessens hassle of "inheritance"
+        - "micro service architecture" comes from this concept, to scale up, latency
 
+- oop composition vs inheritance:
+    When to Use Which
+        - Use Inheritance when:
+        There is a clear, logical "is-a" hierarchy that adheres to the Liskov Substitution Principle (where a subclass can replace its superclass without issues).
+        You need to reuse code from a base class and the relationship is stable and unlikely to change.
+        Working with frameworks that require specific base classes to be extended (e.g., in GUI frameworks). 
+
+        - Use Composition when:
+        You need greater flexibility and the ability to change behavior at runtime.
+        The relationship is a "has-a" or "uses a" relationship.
+        You want to avoid complex class hierarchies and the problems of multiple inheritance.
+        You want to promote loose coupling, making your code easier to test and maintain. 
+        The principle of "favor composition over inheritance" is a best practice in OOP, advocating for composition as the default choice to create more robust, modular, and adaptable software systems. 
 class: 
     - "Classes" set a blueprint to create objects with predefined properties and methods. By creating a class, you can later on instantiate (create) objects from that "class", that will inherit all the properties and methods that "class" has.
 
