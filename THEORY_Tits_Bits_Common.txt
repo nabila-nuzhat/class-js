@@ -264,18 +264,55 @@ class ChildClass extends ClassParentName {
     method2 = () => console.log(this.d)
 }
 
-        - use the "constructor method" to "receive parameters" and assign them as properties, and methods are declared like simple functions
+            - use the "constructor method" to "receive parameters" and assign them as properties, and methods are declared like simple functions
 
-        - On the children class, we use the "extends" keyword to declare the parent class we want to inherit from.
+            - On the children class, we use the "extends" keyword to declare the parent class we want to inherit from.
 
-        - Then on the constructor method, we have to declare the "parent-class's" parameter and use the "super function" to indicate that property is declared on the parent class.
+            - Then on the constructor method, we have to declare the "parent-class's" parameter and use the "super function" to indicate that property is declared on the parent class.
+
+            - can't extend multiple classes, though there're are hacks and ways around this.
+
+            - can't decide what to inherit from a parent class
+
+            - Children classes can override the parent's properties and methods, by declaring it again,
+
+
+        - Encapsulation
+            -  it stands for an object's capacity to "decide" which information it exposes to "the outside" and which it doesn't. 
+            
+            - Encapsulation is implemented through "public and private properties" and methods.
+            In JavaScript, all objects' properties and methods are public by default. "Public" just means we can access an object's property/method from outside its own body
+
+            - first need to declare the "private property", always using the '#' symbol as the start of its name.
+
+            - Then assign its value within the constructor function
+
+            - Encapsulation is useful in cases where we need certain properties or methods for the inner working of the object, but we don't want to expose that to the exterior. Having private properties/methods ensures we don't "accidentally" expose information we don't want.
 
 
 
+        - Abstraction
+            - Abstraction is a principle that says that a class should only represent information that is relevant to the problem's context. In plain English, only expose to the outside the properties and methods that you're going to use. If it's not needed, don't expose it.
+
+            - This principle is closely related to encapsulation, as we can use public and private properties/methods to decide what gets exposed and what doesn't.
+
+        
+        - Polymorphism
+
+            - Polymorphism means "many forms".
+            - It's the ability of "one method" to "return different values" according to certain conditions.
+
+            - passing each class a different parameter at instantiation. That's one kind of polymorphism, "parameter-based"
+            -  "inheritance-based" polymorphism, and that refers to when we have a parent class that sets a method and the child "overrides" that method to modify it in some way
 
 
-
-
+    - Object Composition
+        - Object composition is a "technique" that 
+        - works as an "alternative to inheritance".
+        - by using composition we can assign properties and methods to objects in a more flexible way than inheritance allows,
+        -  objects get properties and methods assigned only as they need them
+        - by using "functions" that receive the "object as a parameter"
+        - assign the object from parameter the desired property/method
 
 class: 
     - "Classes" set a blueprint to create objects with predefined properties and methods. By creating a class, you can later on instantiate (create) objects from that "class", that will inherit all the properties and methods that "class" has.
