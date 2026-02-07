@@ -397,11 +397,23 @@ class:
 
     -  A "constructor" in JavaScript is just a plain old function that "returns an object". The only thing special about it is that, when invoked with the "new" keyword, it assigns its prototype as the prototype of the returned object.
 
-    - "this" keyword points to the "class" itself and is "used to define" the class properties within the constructor method.
+    - "this" keyword points to the class itself (this refers to the object instance being created, not the class definition or “class itself.”) and is "used to define" the class properties within the constructor method. [clarification revised with the help of google and chatgpt. the confusion from concept source link is:https://www.freecodecamp.org/news/object-oriented-javascript-for-beginners/]
 
     - "Methods" can be added by simply defining the function name and its execution code.
 
     - JavaScript is a prototype-based language, and within JavaScript classes are used only as syntactic sugar. This doesn't make a huge difference here, but it's good to know and keep in mind.
+
+    -"class-name" can start with small/capital letter but prefeable "capital-letter": convention
+
+    - class syntax:
+    class ClassNAme {
+        constructor(){
+            methods(any function)/properties
+            }
+    }
+
+    - "constructor-functions" can/may be converted to a class.
+    - "constructor-functions" not common in other programming language for their developers. that's why "class" is introduced as "syntatic-sugar"
 
 - constructor
      - A "constructor" in JavaScript is just a plain old function that "returns an object". 
@@ -409,3 +421,7 @@ class:
     - The only thing special about it is that, when invoked with the "new" keyword, it assigns its prototype as the prototype of the returned object.
 
     - use the "constructor method" to "receive parameters" and assign them as properties, and methods are declared like simple functions
+
+    - "constructor-functions" may be converted to a class
+    - "constructor-functions" not common in other programming language for their developers. that's why "class" is introduced as "syntatic-sugar"
+    

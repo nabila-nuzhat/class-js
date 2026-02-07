@@ -66,3 +66,5 @@ console.log("reduce", reduce); // 262,24
 - curl
 - micro service architecture" comes from this concept, to scale up
 - latency
+- syntatic-sugar list
+- prototype chaining
