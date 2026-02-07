@@ -282,7 +282,8 @@ class ChildClass extends ClassParentName {
 
             - On the children class, we use the "extends" keyword to declare the parent class we want to inherit from.
 
-            - Then on the constructor method, we have to declare the "parent-class's" parameter and use the "super function" to indicate that property is declared on the parent class.
+            - Then in the constructor method, we have to declare the "parent-class's" parameter and use the "super function" to indicate that property is declared on the parent class.
+                super(parameters)
 
             - can't extend multiple classes, though there're are hacks and ways around this.
 
@@ -406,8 +407,9 @@ class:
     -"class-name" can start with small/capital letter but prefeable "capital-letter": convention
 
     - class syntax:
-    class ClassNAme {
-        constructor(){
+    class ClassName {
+        constructor(parameters
+         defining properties){
             methods(any function)/properties
             }
     }
