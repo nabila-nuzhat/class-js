@@ -285,6 +285,8 @@ class ChildClass extends ClassParentName {
             - Then in the constructor method, we have to declare the "parent-class's" parameter and use the "super function" to indicate that property is declared on the parent class.
                 super(parameters)
 
+            - wihtout iheriting the method can be newly created in another class as well with same name. bcz Even though the names are the same, they live in different “containers” (prototypes). No conflict happens because JS looks inside the object’s own prototype chain for methods.(class record + chatgpt)
+
             - can't extend multiple classes, though there're are hacks and ways around this.
 
             - can't decide what to inherit from a parent class
@@ -336,7 +338,13 @@ class ChildClass extends ClassParentName {
                 - Modules/API Interaction: Importing a function from a library (e.g., fetchData()) provides functionality without exposing the underlying API calls, headers, or error handling.
                 - Event Listeners: Using element.addEventListener('click', handler) abstracts away the low-level browser mechanics of tracking mouse clicks and event propagation.
                 - Component-Based Frameworks (e.g., React/Vue): Utilizing components <Button /> abstracts complex HTML, CSS, and behavior, allowing developers to use complex UI elements as simple building blocks.
-                - Closures for Private Data: Using nested functions to keep variables private and hidden from the global scope, exposing only a public function to interact with them. 
+                - Closures for Private Data: Using nested functions to keep variables private and hidden from the global scope, exposing only a public function to interact with them.
+
+        - Simulating Abstract Classes:
+                    - can mimic "Abstract Classes" by creating a base class & throwing error in methods that are intended to be abstract, 
+                    - forcing derived classes to implement their own version
+                    - if extended to subclass, the main class's method should be called in the subclass.
+        - child class = drive class
 
             - Common Use Cases
                 - API Development: Creating APIs where developers interact with a set of well-defined functions (endpoints) without needing to know the server-side logic or database interactions.
