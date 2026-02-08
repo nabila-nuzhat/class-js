@@ -325,7 +325,8 @@ class ChildClass extends ClassParentName {
             - eg. remote control's power on, volume change, etc
                 ATM : card push, pass key -> cash out. the behind the scene is not visible outside
                 coffee machine
-            - eg. firebase: only provides backend service, but user do not have to code create anything
+            - eg. firebase: only provides backend service, but user do not have to code create anything.
+            - eg. email validation function. user only will see email validated/not
 
             - Common Examples of Abstraction in JavaScript:
                 - Function Abstraction: Creating a function like calculateTotal(price, tax) that encapsulates calculation logic, allowing the user to call it with inputs without knowing the mathematical formula.

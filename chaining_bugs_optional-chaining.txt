@@ -1,0 +1,138 @@
+- --------------- why chaining create bug?
+
+Good question — chaining itself isn’t evil 😄, but it can hide bugs or create fragile code if you’re not careful.
+
+Let’s break down why chaining can cause bugs in a very practical way.
+
+1️⃣ One failure breaks the whole chain
+
+In chaining, each step depends on the previous one.
+
+user.getProfile().getAddress().getCity()
+
+
+If any of these returns null or undefined → 💥 crash.
+
+// getAddress() returns undefined
+undefined.getCity() // TypeError
+
+
+So a small change or unexpected value silently turns into a runtime error.
+
+👉 This is why optional chaining exists:
+
+user.getProfile()?.getAddress()?.getCity()
+
+2️⃣ Assumed return values (very common bug)
+
+Chaining only works if every method returns what the next method expects.
+
+arr.push(4).map(x => x * 2) // ❌
+
+
+Why bug?
+
+push() returns a number, not the array
+
+map() expects an array
+
+💡 Many bugs come from wrong assumptions about return values.
+
+3️⃣ Debugging becomes harder
+
+This:
+
+data
+  .filter(isActive)
+  .map(formatUser)
+  .reduce(sumAges)
+
+
+Looks clean, but when the result is wrong:
+
+Which step broke?
+
+Which step changed the data shape?
+
+You often end up breaking the chain anyway just to debug:
+
+const filtered = data.filter(isActive)
+console.log(filtered)
+
+const mapped = filtered.map(formatUser)
+console.log(mapped)
+
+const result = mapped.reduce(sumAges)
+
+4️⃣ Hidden side effects in chains
+
+If a chained method mutates data, bugs sneak in quietly.
+
+obj
+  .updateName("Alex")   // mutates obj
+  .save()
+
+
+Later:
+
+console.log(obj.name) // changed unexpectedly
+
+
+The mutation is hidden inside the chain, making state changes harder to reason about.
+
+5️⃣ Async chaining = silent failures
+
+Promise chaining bugs are super common:
+
+fetchData()
+  .then(data => process(data))
+  .then(result => save(result))
+
+
+If you forget to return:
+
+.then(data => {
+  process(data) // ❌ missing return
+})
+
+
+The next .then() gets undefined, and the bug feels “random”.
+
+6️⃣ Over-chaining reduces readability
+
+Just because you can chain doesn’t mean you should:
+
+user.getProfile().getSettings().getTheme().toUpperCase().trim()
+
+
+This:
+
+Assumes too much
+
+Is fragile
+
+Is painful to change later
+
+Sometimes breaking the chain improves safety.
+
+✅ When chaining is safe
+
+Chaining is great when:
+
+Methods are pure (no side effects)
+
+Return types are predictable
+
+The chain is short and readable
+
+Example:
+
+const names = users
+  .filter(u => u.active)
+  .map(u => u.name)
+
+🧠 Rule of thumb
+
+Chaining doesn’t create bugs — it hides assumptions.
+
+If those assumptions break, the chain breaks.
