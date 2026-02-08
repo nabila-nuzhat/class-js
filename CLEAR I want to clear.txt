@@ -68,3 +68,4 @@ console.log("reduce", reduce); // 262,24
 - latency
 - syntatic-sugar list
 - prototype chaining
+- why no "this-keyword" before the method name inside class??
