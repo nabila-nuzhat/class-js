@@ -310,6 +310,7 @@ class ChildClass extends ClassParentName {
 
         - Getters and Setters: (in encapsulation)
         https://www.geeksforgeeks.org/javascript/javascript-getters-and-setters/
+        https://www.w3schools.com/js/js_object_accessors.asp
             - These special methods provide controlled access to properties, allowing you to run validation logic before data is modified.
             - In JavaScript OOP, "getters and setters" are special methods
             - provide controlled access to an object's properties, enabling encapsulation, data validation, and computed properties.
