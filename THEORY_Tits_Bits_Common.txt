@@ -308,6 +308,14 @@ class ChildClass extends ClassParentName {
 
             - eg. hidden password
 
+        - Getters and Setters: (in encapsulation)
+        https://www.geeksforgeeks.org/javascript/javascript-getters-and-setters/
+            - These special methods provide controlled access to properties, allowing you to run validation logic before data is modified.
+            - In JavaScript OOP, "getters and setters" are special methods
+            - provide controlled access to an object's properties, enabling encapsulation, data validation, and computed properties.
+            -   _name     //unserscore Conventionally private/protected property (older style)
+            - getter and setter are the special methods introduced in ECMAScript 5 (ES5 2009) that allow us to retrieve and modify the values directly without directly changing the object property. The getter uses the get keyword and the setter uses the set keyword to modify and retrieve the values.
+
 
     - Abstraction : hiding complexity of a property, revealing the simple functional part only
             - Abstraction in JavaScript hides complex implementation details, 

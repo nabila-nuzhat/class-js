@@ -2,6 +2,7 @@
 // // - can mimic "Abstract Classes" by creating a base class & throwing error in methods that are intended to be abstract, 
 // //- forcing derived classes to implement their own version
 // //- if extended to subclass, the main class's method should be called in the subclass.
+// // startEngine() function here is used like polymorphism.
 
 
 // ------------- example
