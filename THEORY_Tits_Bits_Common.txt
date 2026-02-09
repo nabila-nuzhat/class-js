@@ -522,12 +522,14 @@ If a module exports many values, you can import everything as an object.
                 export const add = (a, b) => a + b;
                 export const subtract = (a, b) => a - b;
 
-        - default export
+        - default export/ default import:
             - only 1 default export per module
             - 3 ways of default export
             - can be imported as different name than actual name used on the exported js file.
             eg. export const multiply = (a, b) => a * b;
                 import { multiply as mul } from "./math.js";
+            - default function can be imported with random different name without curly bracket
+            
 
         - Namespace Import (* as)
             - import all values from a target module
@@ -538,4 +540,14 @@ If a module exports many values, you can import everything as an object.
         - Combined Import (Default + Named)
             - You can combine default and named imports in a single statement.
             - syntax: import getUser, { isAdmin } from "./user.js";
-    
+        - Dynamic Import (import())
+            - Dynamic imports load modules at runtime instead of at page load.
+            - import within code block, usually with await/then
+            - cannot be used in conditional statem,ent unless used inside function, bcz import is ALWAYS ON TOP
+            - import() function is used: import("./dynamic-export-3-admin.js");
+            - import() is called a dynamic import expression, not a normal JavaScript function.
+            - Common use cases:
+            Code splitting
+            Lazy loading
+            Performance optimization
+
