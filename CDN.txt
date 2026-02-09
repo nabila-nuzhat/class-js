@@ -1,0 +1,25 @@
+CDN (Content Delivery Network)
+One-line definition:
+
+CDN = many servers around the world that deliver website files faster to users
+What a CDN actually is
+
+CDN files (JS, CSS, images, videos) are stored on online servers
+
+Your browser downloads those files over the internet
+
+No internet ❌ → no CDN ❌
+
+So yes:
+
+CDN ≠ offline storage
+
+Important clarification (this is where beginners get confused):
+❌ CDN is NOT “installed” on your computer
+
+You don’t install a CDN like software
+
+You just link files from a CDN in HTML/JS
+
+Real-Life Analogy:
+Imagine you want a specific book from a library. Without a CDN, you have to drive to the main library in a distant city (the origin server). With a CDN, there are local, small branch libraries (CDN servers) in your neighborhood that already have a copy of the popular book, so you get it immediately. 

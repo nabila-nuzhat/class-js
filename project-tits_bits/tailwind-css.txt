@@ -1,3 +1,31 @@
+==== Tailwind Class Record in "module" class-record
+==== Tailwind ===
+`- A utility-first CSS framework packed with classes like flex, pt-4, text-center and rotate-90 that can be composed to build any design, directly in your markup.
+- doesnt load if classes not used
+- node is required
+- tailwind CDN should NOT be used in production
+    only for practise
+- commonly use CLI = command line interface bcz commonly for vanilla js terminal is available.
+- Tailwind CLI is common with vanilla JS projects
+    Because in vanilla JS projects:
+    there is no framework build system
+    Tailwind CLI becomes the simplest build tool
+
+    Example:
+    npx tailwindcss -i input.css -o output.css --watch
+
+
+    This is:
+    lighter than Webpack / Vite
+    framework-free
+    perfect for vanilla HTML + JS
+
+- watch : for vanilla js project
+    - npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch
+    command needs to run each time the file is opened
+    - or else copy the command line in package.json>{}>uder "scripts:> "dev" > npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch
+    for this, running "npm run dev" in the terminal it will do the same as the "watch" command line. 
+
 ==== Tailwind css layers ===
 ==== theme, base, components & utilities apply ===
 ==== how to write :

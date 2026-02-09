@@ -1,0 +1,39 @@
+- for github live:
+index.html must be in root folder of the project/ "docs" folder
+- gitignore:
+    - required to keep "node_modules" 
+    as if all the large files of "node_modules = 17MB" gets pushed to github, will be banned by github.
+    - limitation given for file size
+    - in vite already includes
+    - vanilla js project need to be added manuaally with VS code
+    : shown in module class record
+
+- "node_modules"
+   - should not be required to push to github
+   - can be regenearated by "npm i" command
+   - required to keep "node_modules" in gitignore
+    as if all the large files of "node_modules = 17MB" gets pushed to github, will be banned by github.
+   - should not be shared with others
+        4️⃣ Easy to break, hard to debug 🐛
+
+        When you copy node_modules:
+
+        files may be missing
+
+        permissions may be wrong
+
+        symlinks may break
+
+        Debugging this is painful compared to a clean install.
+
+        5️⃣ Security & trust 🔐
+
+        Sharing node_modules means:
+
+        you’re shipping thousands of files
+
+        you don’t really know what’s inside
+
+        harder to audit or scan for vulnerabilities
+
+        Clean install = safer.

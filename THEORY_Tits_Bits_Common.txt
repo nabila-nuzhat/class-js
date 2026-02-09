@@ -566,5 +566,6 @@ If a module exports many values, you can import everything as an object.
                 }
 
                 loadModules();;
+- Tailwind.css Class record in module class frecord
 
 
