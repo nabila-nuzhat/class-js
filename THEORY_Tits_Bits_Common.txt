@@ -546,6 +546,8 @@ If a module exports many values, you can import everything as an object.
             - cannot be used in conditional statem,ent unless used inside function, bcz import is ALWAYS ON TOP
             - import() function is used: import("./dynamic-export-3-admin.js");
             - import() is called a dynamic import expression, not a normal JavaScript function.
+            - dynamic import returns "promise", that's why "await" is used"
+            - to load dynamic import with page-load iifee is used.
             - Common use cases:
             Code splitting
             Lazy loading
