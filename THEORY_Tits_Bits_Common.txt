@@ -388,6 +388,7 @@ class ChildClass extends ClassParentName {
         - compositing individual different objects to making another new thing. 
         - lessens hassle of "inheritance"
         - "micro service architecture" comes from this concept, to scale up, latency
+        - eg. vs code extension
 
 - oop composition vs inheritance:
     When to Use Which
