@@ -71,3 +71,5 @@ console.log("reduce", reduce); // 262,24
 - why no "this-keyword" before the method name inside class??
 - Object Composition
     eg. vs code extension why?
+
+    
