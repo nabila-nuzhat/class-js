@@ -531,6 +531,8 @@ If a module exports many values, you can import everything as an object.
         - Namespace Import (* as)
             - import all values from a target module
             - If a module exports many values, you can import everything as an object.
+            -  namespace export object, does NOT include the default export.
+            - namespace export object ONLY contains  named exports
 
 
     
