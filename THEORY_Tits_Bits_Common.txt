@@ -508,10 +508,11 @@ https://dev.to/rayan2228/javascript-module-system-explained-with-examples-3l6o
     - can coonect js files with each other by using -> export, import
         js files <script> tag with -> type = "module" attribute
 
-    - ways of export:
-        - named export:
-        - default export
-
+    - ways of export/import:
+        - named export/import
+        - default export/import
+        - namespace import (* as)
+If a module exports many values, you can import everything as an object.
 
         - named export:
             - Named exports allows to export multiple values/functions individually from a single file.
@@ -522,10 +523,14 @@ https://dev.to/rayan2228/javascript-module-system-explained-with-examples-3l6o
 
         - default export
             - only 1 default export per module
-            - 
+            - 3 ways of default export
             - can be imported as different name than actual name used on the exported js file.
             eg. export const multiply = (a, b) => a * b;
                 import { multiply as mul } from "./math.js";
+
+        - Namespace Import (* as)
+            - import all values from a target module
+            - If a module exports many values, you can import everything as an object.
 
 
     
