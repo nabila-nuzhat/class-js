@@ -16,8 +16,10 @@ btnElm11.removeEventListener("click", function(){}); // doesnt work. different f
 // // element.removeEventListener("click", function(){})
     // NOT removes the same function of the "event-listener" added to the element. bcz as "non-primitive data-type" the already applied "event-listener" function's reference != the "removeEventListener" later "function".
     // that is why instead of "inline-JS" applied "function" is assigned to a vaiable.
+    // addEventListener syntax:
+        // element.addEventListener(eventType, callbackFunction, options);
+            // options in addEventListener is an optional third parameter that lets you control how the event behaves. It can either be a boolean (old way) or an object (modern and more flexible).
     // example
-
 
 const btnElm12 = document.querySelector("#el12");
 // Click 

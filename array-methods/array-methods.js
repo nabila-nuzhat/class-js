@@ -264,6 +264,13 @@ array1.forEach((value, index,array)=>{
     console.log(value * 10);
 })
     // map() = .for Each()
+        // map() function syntax: 
+            // array.map((current-value, index, array) => {
+            //   return newElement;
+            // });
+        // map() → array method
+        // (current-value, index, array) => { ... } → map function / callback
+        // return newElement → value placed into the new array
 
 const returnForEach = array1.forEach((value, index, array)=>{
     return value * 1000;
