@@ -308,12 +308,14 @@ console.log("find last:", findLast); // find: 39
 // -------------
 // .filter()
     // filter() = .find() but filters & returns all matched value
-const filter = array1.filter((value, index, array)=>{
+    // filter() syntax: 
+    // newArray = array.filter(callback(element, index, array), thisArg)
+const filterArray = array1.filter((value, index, array)=>{
     return value >= 29;
 })
 
 console.log("array1:", array1); // array1: [ 1, 30, 39, 29, 10, 13 ]
-console.log("filter:", filter);
+console.log("filterArray:", filterArray); // filterArray: [ 30, 39, 29 ]
 
 
 // -----------------------------------------------
