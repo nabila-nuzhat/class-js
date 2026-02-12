@@ -2,6 +2,29 @@
 (using event delegation, bubbling concept)
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ------- Chatgpt Suggestions ----------
 🟢 Super-Beginner (first real JS projects)
 1. Button Click Playground
