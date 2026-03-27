@@ -355,7 +355,7 @@ console.log("Index Of:", indexOf); // Index Of 4
 const includes = array1.includes(10);
 const includes2 = array1.includes(40);
 console.log("array1:", array1); // array1: [ 1, 30, 39, 29, 10, 13 ]
-console.log("includes:", includes,",",includes2); //
+console.log("includes:", includes,",",includes2); // includes: true , false
 
 
 // ------------------
@@ -435,7 +435,7 @@ const nestedArrayReduce = [1, 6, 7, 9, [2, 24]];
 
 const reduce = nestedArrayReduce.reduce((prevValue, cuurentValue, index, array)=> prevValue + cuurentValue)
 
-console.log("reduce", reduce); // 262,24
+console.log("reduce", reduce); // 232,24
 
     // method chaining with .flat()
 const reduce2 = nestedArrayReduce.flat().reduce((prevValue, cuurentValue, index, array)=> prevValue + cuurentValue)
@@ -444,8 +444,13 @@ const reduce2 = nestedArrayReduce.flat().reduce((prevValue, cuurentValue, index,
 console.log("reduce2 :", reduce2); // 49
 const reduceInitialValueAdd = nestedArrayReduce.flat().reduce((prevValue, cuurentValue, index, array)=> prevValue + cuurentValue, 100)
 
-console.log("reduceInitialValueAdd :", reduceInitialValueAdd); // 149
+console.log("reduceInitialValueAdd :", reduceInitialValueAdd); 
 
+const arrayReduce = [1, 6, 7, 9,];
+
+const reduceSingleArray = arrayReduce.reduce((prevValue, cuurentValue, index, array)=> prevValue + cuurentValue)
+
+console.log("reduceSingleArray", reduceSingleArray); 
 
 // ----
 // reduceRight()

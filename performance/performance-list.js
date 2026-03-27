@@ -1,12 +1,34 @@
 // search items from list, dynamic created data,
-const dataList = Array.from({length:100}, (_, i)=>`item-${i}`);
-console.log(dataList);
+const data = Array.from({length:101}, (_, i)=>`item${i}`);
+console.log(data);
 
-const searchElm = document.querySelector("#searchItem");
+const searchInputElm = document.querySelector("#searchInput");
 const searchListElm = document.querySelector("#searchList");
-searchElm.addEventListener("search",(e)=>{
-    // e.target.value
-})
+                                                        // searchInputElm.addEventListener("search",(e)=>{
+searchInputElm.addEventListener("input",(e)=>{
+// // console.log(e);
+    const query = e.target.value.toLowerCase();
+// // console.log(query);
+  if(query.trim()){ // avoid hit-result for blank-space input
+      searchData(query);
+  }
+});
+
+function searchData(query){
+    console.log("search Performance", performance.now());
+    
+    searchListElm.innerHTML = "";
+    const filteredData = data
+    .filter((value)=> value.includes(query))
+    .slice(0, 10); // show 1st 10 items(similar seach result) among searched item(optional)
+// console.log(filteredData);
+
+    filteredData.forEach((value, index)=>{
+        const li = document.createElement("li");
+        li.textContent = value;
+        searchListElm.append(li);
+    })
+}
 
 
 // const searchListItems 
