@@ -8,8 +8,11 @@ const searchListElm = document.querySelector("#searchList");
 searchInputElm.addEventListener("input",(e)=>{
 // // console.log(e);
     const query = e.target.value.toLowerCase();
-// // console.log(query);
-  if(query.trim()){ // avoid hit-result for blank-space input
+    // searchData(query);
+// console.log(query);
+  if(query.trim()){ // avoid hit-result for blank-space in input
+    // console.log(query.trim);
+    
       searchData(query);
   }
 });
