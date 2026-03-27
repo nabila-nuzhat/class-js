@@ -10,7 +10,7 @@ searchInputElm.addEventListener("input",(e)=>{
     const query = e.target.value.toLowerCase();
     // searchData(query);
 // console.log(query);
-  if(query.trim()){ // avoid hit-result for blank-space in input
+  if(query.trim()){ // avoid hit-result for blank-space in input before searching item
     // console.log(query.trim);
     
       searchData(query);
