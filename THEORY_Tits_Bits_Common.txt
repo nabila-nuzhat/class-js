@@ -622,5 +622,7 @@ If a module exports many values, you can import everything as an object.
 
 - performance:
     - performa.now()
+    - performance.now() is a high-resolution timestamp method that returns the current time in milliseconds (with microsecond precision) since the page started loading.
 
+- debounce (related to performance)
 

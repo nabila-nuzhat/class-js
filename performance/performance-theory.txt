@@ -1,4 +1,5 @@
 ================= performance.now() Theory ============================
+================= DeepSeek ============================
 
 performance.now() is a high-resolution timestamp method that returns the current time in milliseconds (with microsecond precision) since the page started loading.
 
