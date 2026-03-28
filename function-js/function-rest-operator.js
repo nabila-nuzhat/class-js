@@ -1,26 +1,26 @@
-// function sum(a, b){
-// return a+ b;
-// }
+function sum0(a, b){
+return a+ b;
+}
 
-// let result = sum(50, 10, 20, 5, 8);
-// console.log(result);
+let result0 = sum0(50, 10, 20, 5, 8);
+console.log(result0); //60
 
 //----------------REST OPERATOR 1 PARAMETER---------------------------
-// 
-// function sum(...c){
-// return c;
-// }
 
-// let result = sum(50, 10, 20, 5, 8);
-// console.log(result);
+function restOperatorOp(...c){
+return c;
+}
+
+let result1 = restOperatorOp(50, 10, 20, 5, 8); 
+console.log(result1); // [ 50, 10, 20, 5, 8 ]
 
 //----------Other Parameter + REST OPERATOR 1 PARAMETER---------------------------
-// function sum(a, b, ...c){
-// return a - b;
-// }
+function substract(a, b, ...c){
+return a - b;
+}
 
-// let result = sum(50, 10, 20, 5, 8);
-// console.log(result);
+let resultSub = substract(50, 10, 20, 5, 8);
+console.log(resultSub); // 40
 
 //-----------REST OPERATOR 1 and multiple PARAMETER= SUM of all Arguements Passed---------------------------
 
@@ -38,4 +38,4 @@ function restOperatorSum(a, b, ...c)
 }
 
 let result = restOperatorSum(100, 200, 2, 4, 20, 100, 55);
-console.log(result);
+console.log(result); // 481

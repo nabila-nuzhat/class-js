@@ -625,6 +625,16 @@ If a module exports many values, you can import everything as an object.
     - performance.now() is a high-resolution timestamp method that returns the current time in milliseconds (with microsecond precision) since the page started loading.
 
 - debounce (related to performance)
+    - How It Works
+        When a debounced function is called repeatedly, it resets a timer. Only when the calls stop for a specified delay does the function actually execute.
 
+    - Common Use Cases : Debounce
+        - Search inputs – Wait until the user stops typing before making an API call
+
+        - Window resize handlers – Recalculate layout only after resizing finishes
+
+        - Button clicks – Prevent double-submission of forms
+
+        - Scroll events – Avoid excessive calculations while scrolling
 
 - functions with function parameters examples added in function folder
