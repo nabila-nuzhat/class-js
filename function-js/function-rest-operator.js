@@ -39,3 +39,4 @@ function restOperatorSum(a, b, ...c)
 
 let result = restOperatorSum(100, 200, 2, 4, 20, 100, 55);
 console.log(result); // 481
+
