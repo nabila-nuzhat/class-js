@@ -626,3 +626,5 @@ If a module exports many values, you can import everything as an object.
 
 - debounce (related to performance)
 
+
+- functions with function parameters examples added in function folder
