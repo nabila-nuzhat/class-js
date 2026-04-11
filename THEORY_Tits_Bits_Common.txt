@@ -625,6 +625,10 @@ If a module exports many values, you can import everything as an object.
     - performance.now() is a high-resolution timestamp method that returns the current time in milliseconds (with microsecond precision) since the page started loading.
 
 - debounce (related to performance)
+    - Debounce is a programming technique used to limit the rate at which a function is executed. 
+    - "ensures that a function is called only after a certain amount of time has passed" since its last invocation,
+    - prevents it from running too frequently.
+
     - How It Works
         When a debounced function is called repeatedly, it resets a timer. Only when the calls stop for a specified delay does the function actually execute.
 
@@ -636,5 +640,67 @@ If a module exports many values, you can import everything as an object.
         - Button clicks – Prevent double-submission of forms
 
         - Scroll events – Avoid excessive calculations while scrolling
+        -  for debounce "delay" is required
+
+    - in JavaScript, debounce is almost exclusively implemented as a function (specifically a higher-order function).
+            -  The standard pattern: A function that returns a function javascript
+            - Method on an object (rare, but still a function)
+            - Class-based (still returns a function)
+            -  Immediate execution version (still a function)
+            -  // Still a function
+                What you WON'T see in JS:
+                ❌ Debounce as a primitive (string, number, boolean)
+
+                ❌ Debounce as an array or plain object by itself
+
+                ❌ Debounce as a built-in language keyword (like if, for)
+            - Debounce = a function that takes a function and returns a debounced function
+                - There's no other way to implement the debounce pattern in JS without using functions, because:
+                - need to delay execution → requires setTimeout (functions)
+                - need to wrap behavior → requires closures (functions)
+                - need to be callable → must be a function
+                So yes — in JavaScript, debounce is always a function (or something that behaves like/calls a function).
+                - only variation is how that function is packaged or exposed.
+                - In JavaScript, debounce creates a wrapper function that delays/schedules calls to your target function using setTimeout.
+                -  Debounce manages timers (setTimeout/clearTimeout)
+
 
 - functions with function parameters examples added in function folder
+
+
+- .apply method:
+    In JavaScript (and similar languages)
+    - The .apply() method is used to call a function with a given this value and arguments provided as an array (or array-like object).
+
+    Main reasons to use it:
+    - Control this context
+    You can explicitly set what this refers to inside the function, which is useful when borrowing methods from other objects.
+
+    - Pass arguments as an array
+    Instead of listing arguments individually, you can pass an array of arguments — helpful when the number of arguments is dynamic or unknown in advance.
+
+    - Call functions with variable arguments
+    For example, using Math.max.apply(null, [1, 2, 3]) to find the max in an array (before the spread operator ... existed).
+
+    - Borrow methods
+    E.g., Array.prototype.slice.apply(arguments) to convert arguments object (array-like) into a real array.
+
+    - Example:
+        js
+        function greet(greeting, punctuation) {
+        console.log(greeting + ", " + this.name + punctuation);
+        }
+
+        const person = { name: "Alice" };
+        greet.apply(person, ["Hello", "!"]); 
+        // Output: Hello, Alice!
+    - Comparison:
+        .call() → arguments passed individually
+
+        .apply() → arguments passed as an array
+
+        .bind() → returns a new function with this bound, doesn't call immediately
+
+        Nowadays, the spread operator (...) and rest parameters make .apply() less common, but it's still useful for array-like objects and when working with older code.
+
+
