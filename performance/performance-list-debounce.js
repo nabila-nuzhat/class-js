@@ -7,7 +7,24 @@ const searchListElm = document.querySelector("#searchList");
 
 // debounce with 500 ms delay
 const debounceSearch = debounce(searchData, 500);
-                                        // searchInputElm.addEventListener("search",(e)=>{
+ 
+// for debounce "delay" is required
+// debounce creates a wrapper function that delays/schedules calls to the target function using setTimeout.
+//  Debounce manages timers (setTimeout/clearTimeout)
+function debounce(fn, delay){
+    let timer;
+    return function(...args){ // rest operator to catch the arguements of the target function which we want to delay.
+        clearTimeout(timer);
+      timer = setTimeout(()=>{
+            fn.apply(this, args);
+        }, delay);
+
+    };
+}
+
+
+
+// searchInputElm.addEventListener("search",(e)=>{
 searchInputElm.addEventListener("input",(e)=>{
                                         // // console.log(e);
     const query = e.target.value.toLowerCase();
@@ -37,19 +54,6 @@ function searchData(query){
     })
 }
 
-// for debounce "delay" is required
-// debounce creates a wrapper function that delays/schedules calls to the target function using setTimeout.
-//  Debounce manages timers (setTimeout/clearTimeout)
-function debounce(fn, delay){
-    let timer;
-    return function(...args){ // rest operator to catch the arguements of the target function which we want to delay.
-        clearTimeout(timer);
-      timer = setTimeout(()=>{
-            fn.apply(this, args);
-        }, delay);
-
-    };
-}
 
 
 
@@ -58,7 +62,7 @@ function debounce(fn, delay){
 // const searchedItems
 
 
-// ==================== EXPLANATION ==========================================
+// ==================== EXPLANATION DeepSeek==========================================
     // // const data = Array.from({length:10000}, (_, i)=>`item${i}`);
     // console.log(data);
 
