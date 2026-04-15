@@ -11,9 +11,10 @@ const debounceSearch = debounce(searchData, 500);
 // for debounce "delay" is required
 // debounce creates a wrapper function that delays/schedules calls to the target function using setTimeout.
 //  Debounce manages timers (setTimeout/clearTimeout)
+// here fn - refers to the function which i want to delay
 function debounce(fn, delay){
-    let timer;
-    return function(...args){ // rest operator to catch the arguements of the target function which we want to delay.
+    let timer; // can be null/0 too
+    return function(...args){ //the "function" here, cleader the timer, + started "new timer". passed the "this" + "arguements", ... rest operator to catch the arguements of the target function which we want to delay.
         clearTimeout(timer);
       timer = setTimeout(()=>{
             fn.apply(this, args);
