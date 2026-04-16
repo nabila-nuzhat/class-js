@@ -625,6 +625,7 @@ If a module exports many values, you can import everything as an object.
     - performance.now() is a high-resolution timestamp method that returns the current time in milliseconds (with microsecond precision) since the page started loading.
 
 - debounce (related to performance)
+    = akta certain time porjonto, User kono changes kore/react kore, tokhon theke timer baraite thakbo. jokhon particualr time por r react/ change korbena, tokhon main target function run hobe.
     - Debounce is a programming technique used to limit the rate at which a function is executed. 
     - "ensures that a function is called only after a certain amount of time has passed" since its last invocation,
     - prevents it from running too frequently.
@@ -663,6 +664,19 @@ If a module exports many values, you can import everything as an object.
                 - only variation is how that function is packaged or exposed.
                 - In JavaScript, debounce creates a wrapper function that delays/schedules calls to your target function using setTimeout.
                 -  Debounce manages timers (setTimeout/clearTimeout)
+
+- debounce vs Throttle
+    - no repetative delay like debounce, in executing the target function after definite time hits.
+    - certain time er por user jotoi change/react koruk, main function kaj korbe.
+    - eg. download button jotbari click koruk akbari download hobe akbar. jodi user "login" na kore, throttle use kora hoy ei situation er jonno
+
+    - ex- with every scroll, dom refreshes and loads countless times. to prevent that, dom will refresh only once after certain time period using "throttle".
+
+
+
+
+
+
 
 
 - functions with function parameters examples added in function folder
