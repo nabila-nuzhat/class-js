@@ -1,0 +1,228 @@
+Factorial:
+In the Fibonacci sequence (
+), 
+ refers to the position or index of the number in the sequence, starting from 0. 
+BYJU'S
+BYJU'S
+ +1
+
+
+ F0 is the 1st number: 
+
+
+
+ F1 is the 2nd number: 
+
+
+
+ F2 is the 3rd number: 
+
+
+
+ F3 is the 4th number: 
+
+
+
+ F4 is the 5th number: 
+
+ 
+The sequence is typically defined as 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, ....
+The formula for any number is 
+
+
+, where 
+
+. 
+BYJU'S
+BYJU'S
+ +1
+Key Points on the value of 
+:
+0-based Indexing: The most common mathematical definition starts with 
+
+ and 
+
+.
+Position: The term 
+ is often considered the 
+
+
+
+-th number in the series.
+13th Number: If starting with 0, 1, 1, ..., the 13th number is 144 (
+).
+Factorial rules and Fibonacci series represent two different types of mathematical growth and recursive logic. While both can be solved using recursive or iterative algorithms in programming, they differ significantly in their growth rates, definitions, and applications. 
+Quora
+Quora
+ +4
+Factorial (
+
+) is the product of all positive integers less than or equal to 
+ (
+
+
+
+
+
+
+
+).
+Fibonacci Series (
+) is a sequence where each number is the sum of the two preceding ones, usually starting from 0 and 1 (
+
+
+
+
+
+
+
+
+
+
+
+
+). 
+Medium
+Medium
+ +1
+Key Differences: Factorial vs. Fibonacci
+Growth Rate: Factorial grows exceptionally fast (exponentially), with 
+
+ exceeding the number of atoms on Earth. Fibonacci grows at a slower, exponential rate dictated by the golden ratio (~1.618).
+Formula:
+Factorial: 
+
+
+
+
+
+
+
+
+.
+Fibonacci: 
+
+
+
+
+
+
+
+
+
+
+
+
+
+.
+Recursive Efficiency: While both can be solved recursively, recursive Fibonacci (
+
+
+
+) is notoriously inefficient due to redundant calculations, whereas recursive factorial (
+
+
+
+) is generally efficient.
+Applications: Factorials are used for calculating permutations (arrangements), while Fibonacci numbers often appear in nature, geometry, and algorithms. 
+Medium
+Medium
+ +6
+Factorial Rules
+Definition: 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.
+Base Case: 
+
+
+.
+Recursive Rule: 
+
+
+
+
+
+
+
+
+.
+Characteristics: Defines the number of ways to arrange unique items. 
+YouTube
+YouTube
+ +3
+Fibonacci Series
+Definition: 
+
+
+.
+Base Cases: 
+
+
+
+
+.
+Sequence: 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.
+Characteristics: Each term is the sum of the previous two; relates to the golden ratio. 
+Medium
+Medium
+ +3
+Programming Approaches
+Factorial (Iterative): Highly efficient, uses a single loop to multiply from 1 to 
+.
+Fibonacci (Iterative): Far more efficient than recursion; updates the last two values in a single loop.
+Recursive Fibonacci Danger: Recursive calls for 
+
+
+
+ call 
+
+
+
+
+ and 
+
+
+
+
+, resulting in massive, redundant calculations (e.g., 
+
+
+
+ requires 8 calls, while 
+
+
+
+ requires 16). 
+YouTube
+YouTube
+ +4

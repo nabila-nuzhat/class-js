@@ -675,10 +675,6 @@ If a module exports many values, you can import everything as an object.
 
 
 
-
-
-
-
 - functions with function parameters examples added in function folder
 
 
@@ -717,4 +713,23 @@ If a module exports many values, you can import everything as an object.
 
         Nowadays, the spread operator (...) and rest parameters make .apply() less common, but it's still useful for array-like objects and when working with older code.
 
+------------------------------------------------
 
+- Memoization
+    https://www.freecodecamp.org/news/memoization-in-javascript-and-react/
+        - Memoization is an optimization technique that speeds up computer programs by storing the results of expensive function calls and returning the cached result when the same inputs occur again
+        - trades memory space for speed, eliminating redundant calculations, particularly in recursive functions, reducing complex time complexities
+
+
+
+
+
+- recursion
+    - Recursion is a programming and mathematical concept where a function calls itself, directly or indirectly, to solve complex problems by breaking them into smaller, manageable subproblems.
+    - requires a base case to terminate, preventing infinite loops and ensuring efficient traversal of structures like trees or solving tasks like factorials.
+
+    - recursion in js :
+        - Recursion is a programming technique in JavaScript where a function calls itself to solve a problem by breaking it down into smaller, identical sub-problems. It is often an elegant alternative to iterative loops (for/while) when working with complex data structures like trees or nested objects
+    - ex Examples
+    Factorial: factorial(n) = n * factorial(n-1).
+    Fibonacci Sequence: fib(n) = fib(n-1) + fib(n-2)
