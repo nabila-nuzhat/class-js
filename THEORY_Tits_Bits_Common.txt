@@ -719,7 +719,7 @@ If a module exports many values, you can import everything as an object.
     https://www.freecodecamp.org/news/memoization-in-javascript-and-react/
         - Memoization is an optimization technique that speeds up computer programs by storing the results of expensive function calls and returning the cached result when the same inputs occur again
         - trades memory space for speed, eliminating redundant calculations, particularly in recursive functions, reducing complex time complexities
-
+    - can be used in API calling, by keeping the data in an object.
 
 
 
@@ -733,3 +733,11 @@ If a module exports many values, you can import everything as an object.
     - ex Examples
     Factorial: factorial(n) = n * factorial(n-1).
     Fibonacci Sequence: fib(n) = fib(n-1) + fib(n-2)
+
+
+
+
+
+    - setTimeout
+        - in function returns a id in console.
+        - ?? syntax of setTimeout
