@@ -777,6 +777,22 @@ https://dev.to/brandonwie/understanding-garbage-collection-in-javascript-and-bey
 - OVER optimization
     - should be avoided.
 
+
+- storage
+    - 2 types: essential
+        - Local storage: 5MB
+            - would not "delete' until we delete it. 
+            - permenant
+            - password not saved here. saved in different space in browser
+        - Session storage : 5MB
+            - temporary
+        - located:
+            browser > inspect > Application >
+        - cookies
+
+    - Password Manager
+        - Bitwarden preferable
+        - google pass manger not good
 ----------------------------------------------
 - setTimeout
     - in function returns a id in console.

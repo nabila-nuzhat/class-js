@@ -1,0 +1,26 @@
+- storage
+    - 2 types: essential
+        - Local storage: 5MB
+            - would not "delete' until we delete it. 
+            - permenant
+            - password not saved here. saved in different space in browser
+            - // remove from local storage:
+                - localStorage.removeItem(key, value)
+                - delete from browser manually
+        - Session storage : 5MB
+            - temporary
+            - goes away:
+                - tab close
+                - browser close
+                eg. tab close logsout if account
+            - does not goes away if "reload"
+        - located:
+            browser > inspect > Application >
+        - cookies
+
+        - DATA MUST be Stored in local storage & Session Storage as "string". 
+        - // to keep in local storage Object use JSON.stringify. for getting the data back has to be "Parsed".
+
+    - Password Manager
+        - Bitwarden preferable
+        - google pass manger not good
