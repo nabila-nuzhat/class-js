@@ -1,0 +1,31 @@
+- Memory
+- memory leak
+   source Links:
+    - https://dev.to/alisamir/memory-leaks-in-javascript-a-simple-guide-31e8
+    https://auth0.com/blog/four-types-of-leaks-in-your-javascript-code-and-how-to-get-rid-of-them/
+    
+    - js cleans garbage by "garbage collector" but based on certain rules.
+    - if not met memory leaks occur.
+    - in JavaScript, memory leaks occur when the memory which is no longer needed is not released. 
+    - causes  application to use more memory over time, which can slow down  app or even crash it in extreme cases.
+
+    - eg. adding add event listener
+
+    - Common Causes of Memory Leaks: (read source link)
+        1. Global Variables
+            - can be accessed from anywhere. 
+            - if used "var"/ "let", "const" not used then creates more risk of memory leak. even inside function
+        2. Event Listeners Not Removed
+        3. DOM References
+            If you keep a reference to a DOM element in your code, but that element is removed from the page, the memory it occupies won’t be freed.
+        4. Closures
+
+- garbage collection
+- How JavaScript Manages Memory?
+    - JavaScript uses Garbage Collection to manage memory. 
+    like a cleanup crew that removes unused items from the drawer. 
+    - Garbage Collection works automatically by:
+        1- Finding variables, objects, or functions no longer used.
+        2- Releasing the memory they occupy.
+
+        However, sometimes, this cleanup crew can’t do its job properly. When that happens, you’re left with a memory leak.

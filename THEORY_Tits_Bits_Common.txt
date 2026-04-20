@@ -735,9 +735,45 @@ If a module exports many values, you can import everything as an object.
     Fibonacci Sequence: fib(n) = fib(n-1) + fib(n-2)
 
 
+-----------------------------------------------------
+- Memory
+- memory leak
+    - https://dev.to/alisamir/memory-leaks-in-javascript-a-simple-guide-31e8
+    https://auth0.com/blog/four-types-of-leaks-in-your-javascript-code-and-how-to-get-rid-of-them/
+    - js cleans garbage by "garbage collector" but based on certain rules.
+    - if not met memory leaks occur.
+    - in JavaScript, memory leaks occur when the memory which is no longer needed is not released. 
+    - causes  application to use more memory over time, which can slow down  app or even crash it in extreme cases.
+    -"null variable" garbage is not kept in memory.
+    - being cautious about memory leak is essential for optimization & larger ptojects. 
+    - eg. adding add event listener
+
+    - Common Causes of Memory Leaks: (read source link)
+        1. Global Variables
+            - can be accessed from anywhere. 
+            - if "var", "let", "const" not used then creates more risk of memory leak. even inside function
+        2. Event Listeners Not Removed
+            - is an object. Event listeners can hold references to objects. If you forget to remove them, those objects won’t be garbage collected.
+            - Fix: Remove event listeners when they’re no longer needed.
+            - eg. modal button. which will not be used after a limited time. 
+            - If 'button' is removed from the DOM but the event listener isn't, memory is leaked.
+        3. DOM References
+        4. Closures
+
+- garbage collection
+- How JavaScript Manages Memory?
+    - JavaScript uses Garbage Collection to manage memory. 
+    like a cleanup crew that removes unused items from the drawer. 
+    - Garbage Collection works automatically by:
+        1- Finding variables, objects, or functions no longer used.
+        2- Releasing the memory they occupy.
+    - "null variable"garbage is not kept in memory.
+    - 
+        However, sometimes, this cleanup crew can’t do its job properly. When that happens, you’re left with a memory leak.
+
+----------------------------------------------
+- setTimeout
+    - in function returns a id in console.
+    - ?? syntax of setTimeout
 
 
-
-    - setTimeout
-        - in function returns a id in console.
-        - ?? syntax of setTimeout
