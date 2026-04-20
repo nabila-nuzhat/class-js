@@ -760,7 +760,9 @@ If a module exports many values, you can import everything as an object.
         3. DOM References
         4. Closures
 
-- garbage collection
+- garbage collection (GC): for Interviews.
+not usually used by beginner level.
+https://dev.to/brandonwie/understanding-garbage-collection-in-javascript-and-beyond-k3a
 - How JavaScript Manages Memory?
     - JavaScript uses Garbage Collection to manage memory. 
     like a cleanup crew that removes unused items from the drawer. 
@@ -768,8 +770,12 @@ If a module exports many values, you can import everything as an object.
         1- Finding variables, objects, or functions no longer used.
         2- Releasing the memory they occupy.
     - "null variable"garbage is not kept in memory.
+    - if there is no "reference" left/connected in/with the "heap memory" garbage collector removes that from memory. otherwise does not remove it.
     - 
         However, sometimes, this cleanup crew can’t do its job properly. When that happens, you’re left with a memory leak.
+
+- OVER optimization
+    - should be avoided.
 
 ----------------------------------------------
 - setTimeout

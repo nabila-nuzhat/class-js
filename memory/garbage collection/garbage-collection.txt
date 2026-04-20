@@ -1,0 +1,32 @@
+// google search AI--------------------------------
+Garbage collection (GC) is a form of automatic memory management that reclaims unused memory, preventing leaks and manual deallocation errors. It periodically finds objects no longer referenced by the program, marking them for deletion, and clearing them from memory. Key concepts include "mark-and-sweep" algorithms and heap management. 
+Wikipedia
+Wikipedia
+ +5
+Usage Examples & Contexts
+Java Virtual Machine (JVM): Actively manages heap memory by identifying and clearing unreachable objects.
+JavaScript: Fundamental in browsers (like Chrome V8) to manage web application memory, ensuring performance.
+Languages with Automatic Memory Management: Used extensively in Java, Python, and Go to reduce manual memory management errors.
+Early Lisp Systems: Implemented in 1959 to automatically handle memory. 
+Wikipedia
+Wikipedia
+ +5
+Key Benefits & Trade-offs
+Benefits: Prevents memory leaks, ensures memory safety (preventing pointer corruption), and reduces developer burden.
+Drawbacks: Can cause performance bottlenecks, high CPU usage, and unpredictable "stop-the-world" pauses where the program stops to clean memory. 
+YouTube
+YouTube
+ +3
+Synonyms & Related Concepts
+Automatic Memory Management
+Memory Management System
+Automatic Storage Reclamation
+Garbage Collector (GC)
+Mark-and-Sweep (a type of GC algorithm) 
+Wikipedia
+Wikipedia
+ +3
+Process Breakdown
+Marking: Identifying live objects (in use) vs. dead objects (garbage) by traversing references.
+Sweeping/Deletion: Reclaiming the memory occupied by unreferenced (dead) objects.
+Compacting: Moving live objects together to reduce fragmentation and free up large contiguous memory spaces.
