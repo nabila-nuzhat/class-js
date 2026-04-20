@@ -1,0 +1,9 @@
+Both Maps and Objects in JavaScript are collections of key-value pairs, but they are designed for different purposes. 
+Key Differences
+Feature 	Object	Map
+Key Types	Limited to Strings or Symbols.	Can be any value, including objects, functions, and primitives.
+Key Order	Not guaranteed for all properties.	Elements are ordered by insertion time.
+Size	Manual tracking (e.g., Object.keys(obj).length).	Built-in .size property for instant access.
+Iteration	Not directly iterable (requires Object.entries() or for...in).	Directly iterable using for...of or .forEach().
+Performance	Faster for simple reads and static sets of keys.	Optimized for frequent additions and deletions.
+Serialization	Native support for JSON.stringify() and JSON.parse().	Requires custom replacer/reviver for JSON support.

@@ -1,0 +1,60 @@
+Map: data-type /"new type" or "specialized data structure" (google search)
+---------------------------------------
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map
+
+- - Map vs Object
+        - Objects' key must be always string
+- In JavaScript, the term "Map" typically refers to one of two different concepts: the Map object (a data structure) or the Array.prototype.map() method (a functional tool). 
+
+1. The Map Object (Data Structure)
+The Map object is a collection of key-value pairs introduced in ES6 (2015). It is similar to a regular object but offers significant advantages for specific data management tasks. 
+
+Key Features:
+Flexible Key Types: Unlike standard objects, which only allow strings or symbols as keys, a Map can use any data type as a key, including numbers, objects, and even functions.
+Maintains Order: Elements are iterated in their original insertion order, providing consistent behavior across different environments.
+Size Property: You can instantly get the number of items using the .size property.
+Performance: It is optimized for scenarios involving frequent additions and removals of entries.
+Common Methods:
+set(key, value): Adds or updates an element.
+get(key): Retrieves the value associated with a key.
+has(key): Checks if a key exists.
+delete(key): Removes a specific entry.
+clear(): Wipes all entries. 
+
+2. Array.prototype.map() (Method)
+The .map() method is a built-in array function used to transform every element in an array. 
+MDN Web Docs
+MDN Web Docs
+ +1
+How it Works: It calls a provided "callback" function on every element in the original array and returns a new array containing the results.
+Immutability: It is a non-mutating method, meaning it does not change the original array.
+Common Use Case: Transforming data, such as doubling numbers, extracting specific properties from an array of objects, or formatting strings. 
+Comparison: Map Object vs. Standard Object
+Feature 	Map Object	Standard Object
+Key Types	Any (Objects, Functions, Primitives)	Strings or Symbols only
+Iteration Order	Insertion order (strictly maintained)	Generally insertion order (complex rules)
+Retrieving Size	Use .size property	Must count manually or use Object.keys().length
+Performance	Faster for frequent add/remove operations	Faster for static, small datasets
+Security	Safe from prototype pollution	Vulnerable unless using Object.create(null)
+
+
+    -eg.
+        const map = new Map();
+        const obj = {};
+        map.set(true, false);
+        map.set(false, true);
+        console.log(map); // Map(2) { true => false, false => true }
+        map.set(obj, true); // ???? direct object as key might cause issue in finding our since object stores in reference.
+        console.log(map.get(obj)); // true
+
+        if (map.has(obj)){
+            map.set(obj, "hello"); // 
+            
+        }
+        console.log(map);
+
+        output: Map(2) { true => false, false => true }
+        true
+        Map(3) { true => false, false => true, {} => 'hello' }
+        what is 2 and 3 in output?
+        In the output, the numbers 2 and 3 refer to the size of the Map (the number of key-value pairs it contains).

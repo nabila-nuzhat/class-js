@@ -798,4 +798,41 @@ https://dev.to/brandonwie/understanding-garbage-collection-in-javascript-and-bey
     - in function returns a id in console.
     - ?? syntax of setTimeout
 
+---------------------------
+- Map: data-type /"new type" or "specialized data structure"
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map
+    - A Map is a built-in JavaScript object that stores collections of key-value pairs. Unlike a standard JavaScript Object, a Map remembers the original insertion order of its elements and allows keys to be of any data type, including objects, functions, and primitives.
 
+    - In JavaScript, a Map is a specialized keyed collection data structure. Technically, it is a type of Object, but it functions as a distinct alternative to standard literal objects ({}) for storing key-value pairs. 
+
+    - While technically part of the "Object" reference type, it is often referred to as a "new type" or "specialized data structure" because it solves several limitations of standard objects
+
+    - Map vs Object
+        - Objects' key must be always string/symbol/number which converts to string.
+          Map's key can be an object/any data type
+        - Map's key maintains "order" of insertion.
+        -Map's length can be seen directly withouyt converting into array.
+        object requres to be converted yto array.
+
+        - Map can be looped/interation easily unlike Object
+
+        - No prototype
+        - Map for large data sets.
+        - Map - JSON support easier.
+        - Map has index numbers.
+          Object does not have index.
+    
+    - Map Uses when:
+        - need to use non-string values(like object/functions)
+        - insertion order must be preserved.
+        - need for retreive size of collection- frequently add remove key-value dynamically.
+        - remove prototyooe chaining.
+        - used in complex data
+
+
+    - create Map: 
+        - const variable = new Map()
+        -
+
+    - Map methods:
+        - has, get, set, delete
