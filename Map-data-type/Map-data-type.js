@@ -1,3 +1,4 @@
+// create Map way 1 ---------------------------
 const map = new Map();
 const obj = {};
 map.set(true, false);
@@ -29,3 +30,28 @@ console.log(map); //  Map(3) {true => false, false => true, {…} => 'hello'}
 // [[Prototype]]
 // : 
 // Map
+
+// create Map way 2 ---------------------------
+const map2 = new Map([
+    [obj, true], 
+    [()=> {}, "a"]
+    ]);
+    console.log(map2);
+    console.log(map2.size);
+   // console.log(map2.clear); // clears whole map
+     console.log(map.get(()=> {})); // undefined, bcz here it gives a reference not direct value. so forEach is needed to get function's value
+// forEach in Map ----------------------
+map2.forEach((val, key, map)=>{
+    // console.log("v", val);
+    // console.log("i", key);
+    // console.log("m", map);
+    console.log(map.get(key)); // true a
+    
+})
+//// o/p:
+// v true
+// i {}
+// m Map(2) { {} => true, [Function (anonymous)] => 'a' }
+// v a
+// i [Function (anonymous)]
+// m Map(2) { {} => true, [Function (anonymous)] => 'a' }

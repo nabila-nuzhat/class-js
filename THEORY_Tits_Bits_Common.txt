@@ -806,6 +806,10 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
     - In JavaScript, a Map is a specialized keyed collection data structure. Technically, it is a type of Object, but it functions as a distinct alternative to standard literal objects ({}) for storing key-value pairs. 
 
     - While technically part of the "Object" reference type, it is often referred to as a "new type" or "specialized data structure" because it solves several limitations of standard objects
+    - without loop function key's value.
+    - using .next() method in MapIterator using ".entries" without loop, the next values can be seen. no "next" in Map. it is working on a iterator itself.
+    if done = false, still more  value left.
+    done = true, last is shown,
 
     - Map vs Object
         - Objects' key must be always string/symbol/number which converts to string.
@@ -832,7 +836,10 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
 
     - create Map: 
         - const variable = new Map()
-        -
+        variable.set (key, value)
+        - const variable = new Map([[obj, true], [()=> {}, "a"]
+        ])
+       
 
     - Map methods:
         - has, get, set, delete
