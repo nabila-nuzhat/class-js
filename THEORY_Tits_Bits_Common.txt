@@ -843,3 +843,27 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
 
     - Map methods:
         - has, get, set, delete
+    
+    -----------------------------------
+    - Set
+        - Set=---------
+    https://www.freecodecamp.org/news/set-and-map-in-javascript/
+    - NO duplicate values.
+    - Set makes every value unique.
+    eg. Duplicate user name in backend.
+    have to show in Frontend as unique.
+    convert them to Set, Set will convert the
+    keys into unique.
+    eg. like the list of each unique names of the
+
+    - How to Create a Set with a Value
+    const ids = new Set([3,6,9,7]);
+    console.log(ids);
+
+    - in ouput bcz Set shows only the list of Unique values.
+      even though in the created Set, inputted three "3"
+      eg.
+      const ids = new Set([3, 9, 6, 7, 3, 3]);
+        console.log(ids); // Set(4) {3, 9, 6, 7}
+
+    - Set like an Object with no Keys.

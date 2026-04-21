@@ -1,0 +1,25 @@
+Web scraping with JavaScript primarily involves using Node.js to automate the extraction of data from websites. The best approach depends on whether the target site is static or dynamic (JavaScript-heavy). 
+Bright Data
+Bright Data
+ +3
+Core Libraries & Tools
+Axios: A popular HTTP client used to fetch raw HTML content from a server.
+Cheerio: A fast, lightweight library that parses static HTML using jQuery-like syntax. It is the best choice for speed when scraping sites that don't require a browser to render content.
+Puppeteer: A headless browser tool developed by Google. It is essential for scraping dynamic sites or Single Page Applications (SPAs) because it can execute JavaScript, click buttons, and handle logins.
+Playwright: Similar to Puppeteer but built by Microsoft, it offers broader support for multiple browsers (Chromium, Firefox, WebKit) and more modern automation features.
+Crawlee: An all-in-one scraping framework that simplifies crawling logic, proxy rotation, and session management. 
+SerpApi
+SerpApi
+ +4
+Typical Workflow
+Inspect: Use the Chrome DevTools Inspector (F12) to identify the CSS selectors of the data you want to extract.
+Request: Use Axios to get the page's HTML or Puppeteer/Playwright to launch a browser and navigate to the URL.
+Parse: Load the content into Cheerio or use the browser's native document.querySelector via Puppeteer's page.evaluate() to select specific elements.
+Process: Clean and structure the extracted data, typically converting it into a JSON format for easy storage or analysis. 
+Bright Data
+Bright Data
+ +4
+Key Best Practices
+Avoid Detection: Use rotating User-Agents and proxies to prevent your IP from being blocked by anti-bot systems.
+Respect Rules: Always check a site's robots.txt file and implement rate limiting (delays between requests) to avoid overloading their servers.
+Error Handling: Implement retries with exponential backoff to handle temporary network issues or server errors gracefully
