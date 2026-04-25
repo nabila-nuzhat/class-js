@@ -16,7 +16,6 @@ const person2 = {
 console.log(person1.sayName.call(person2)); // Jimena Juarez
 //======================================================
 
-
 // importance of ";" in iifee
 // let a = 10;
 // (function(){
@@ -65,7 +64,7 @@ const person4 = {
     lastNameCeleb: "Aaslam - The singer"
 }
 
-console.log(person3.starCeleb.call(person4, 35));
+console.log(person3.starCeleb.call(person4, 35)); // I am Atif Aaslam - The singer, age: 35
 
 
 // Call method another Multiple argument example =====================
@@ -82,7 +81,8 @@ const person22222 = {
     surname: 'Juarez'
 }
 
-console.log(person1.sayName.call(person2, "DF", "Mexico"));
+// console.log(person1.sayName.call(person2, "DF", "Mexico"));
+console.log(person1111.sayName.call(person22222, "DF", "Mexico")); // Jimena Juarez, DF, Mexico
 
 // Google search call-method exapmle ====================
 const person = {

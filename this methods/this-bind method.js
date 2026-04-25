@@ -32,7 +32,7 @@ const celeb4 = {
     surname: 'Decruz'
 }
 
-console.log(celeb3.sayName.bind(celeb4)); // [Function: bound sayName]
+console.log(celeb3.sayName.bind(celeb4)); // [Function: bound sayName] here, returned a function unlike .apply & .call
 
 const sayCelebName2 = celeb3.sayName.bind(celeb4);
 console.log(sayCelebName2()); //Penelope Decruz
