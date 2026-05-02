@@ -61,27 +61,31 @@ console.log(nums); // [ 0, 1, 2, 3, 4, 5 ]
 
 const numSlice4 = nums.slice(0);
 console.log("nums.slice(0) =", numSlice4); // = [ 0, 1, 2, 3, 4, 5 ]
+console.log("nums after new slice:", nums);
+
 
 // ...
 const numSlice5 = nums.slice(2);
 console.log("nums.slice(2) =", numSlice5);  // = [ 2, 3, 4, 5 ]
+console.log("nums after new slice:", nums);
 
 // ...
 const numSlice1 = nums.slice(0,0); 
 console.log("nums.slice(0,0) =",numSlice1); // = []
+console.log("nums after new slice:", nums);
 
 // ...
 const numSlice2 = nums.slice(0,1); 
 console.log("nums.slice(0,1) =", numSlice2); // = [ 0 ]
-
+console.log("nums after new slice:", nums);
 // ...
 const numSlice3 = nums.slice(0,3); 
 console.log("nums.slice(0,3) =", numSlice3); // = [ 0, 1, 2 ]
-
+console.log("nums after new slice:", nums);
 // ...
 const numSlice6 = nums.slice(1, 5); 
 console.log("nums.slice(1,5) =", numSlice6); // [ 1, 2, 3, 4 ]
-
+console.log("nums after new slice:", nums);
 // ...
 const numSlice7 = nums.slice(1, 6); // [ 1, 2, 3, 4, 5 ] ??????
 console.log("nums.slice(1,6) =", numSlice7); // 
