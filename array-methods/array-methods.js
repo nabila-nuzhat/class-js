@@ -94,7 +94,7 @@ console.log("nums.slice(4) =", numSlice8); // [ 4, 5 ]
 const numSlice9 = nums.slice(5); 
 console.log("nums.slice(5) =", numSlice9); // [ 5 ]
 
-console.log("nums", nums);
+console.log("nums", nums); // nums [ 0, 1, 2, 3, 4, 5 ]
 
 
 
@@ -116,9 +116,11 @@ const numsSplice3 = nums.splice(1, 2);
 console.log("nums.splice(1, 2) =",numsSplice3); // [ 3, 4 ]
 console.log("nums =", nums); // nums = [ 2, 5 ]
 
-
+    // replacing using .splice():
+    //  "old-array.splice(index starting point, quantity of values wannt to delete, new values)"
 const numSplice4 = nums.splice(0, 1, 100, 55);
-console.log("nums.splice(0, 1, 100, 55) =", numSplice4); // [ 2 ]
+console.log("nums.splice(0, 1, 100, 55) =", numSplice4); // nums.splice(0, 1, 100, 55) = [ 2 ] compare below without amount: ?????????????????????????????????????????
+console.log("nums.splice(0, 100, 55) =", numSplice4); // nums.splice(0, 100, 55) = [ 2 ]
 console.log("nums =", nums); // nums = [ 100, 55, 5 ]
 
 // array.join() = converts array => string ============================
