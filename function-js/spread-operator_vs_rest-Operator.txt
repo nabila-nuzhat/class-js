@@ -26,7 +26,8 @@ javascript
 const { name, age, ...details } = { name: "John", age: 30, city: "NYC", job: "Dev" };
 console.log(name); // "John"
 console.log(details); // { city: "NYC", job: "Dev" }
-Spread Operator (...)
+
+Spread Operator (...) =========================
 Purpose
 Expands elements from an array or object. Used on the giving side.
 
@@ -113,7 +114,8 @@ const scores = [95, 87, 92];
 // Instead of: Math.max(95, 87, 92)
 // You can "open" the array:
 Math.max(...scores); // 95
-Rest Operator = Closing the Box
+==============================================
+Rest Operator = Closing the Box =================
 The Analogy
 When you have many separate items, rest operator is like putting them into a box and giving it a name.
 
